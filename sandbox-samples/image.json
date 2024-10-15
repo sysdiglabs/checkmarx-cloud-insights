@@ -1,0 +1,2888 @@
+[
+    {
+        "category": "Compute",
+        "hash": "7cc3a3e1266b998f012890e8eeb428f5",
+        "labels": null,
+        "lastSeen": 1721321150575,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.6",
+            "created": "1679702738022",
+            "digest": "sha256:c49553d5b948fcf5b23bed3718c797f42ebe87d7ae5f2c6f537f530b65cadaec",
+            "id": "sha256:dc3fa6e8352e5890d46fe01ab84a7761a97de3d13a3d2858af461203532ba457",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/metrics-server:v0.6.3",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/metrics-server",
+            "scanResultID": "17e3341aebc2a55429febbe88ac1a892"
+        },
+        "name": "oss/kubernetes/metrics-server",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22dc3fa6e8352e5890d46fe01ab84a7761a97de3d13a3d2858af461203532ba457%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "9cb38e03a097dfc9661cf9afaae0d043",
+        "labels": null,
+        "lastSeen": 1721321394697,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 10.13",
+            "created": "1717696328729",
+            "digest": "sha256:ca2b9fe8149e98e3248f73de573b42e7a42ec52c34dd66760245e0c150a227a0",
+            "id": "sha256:73c145942465bd6f7a61e71fcb43aad8c0997efd69dc8b2e2cda7ae79b90ef95",
+            "os": "linux",
+            "pullString": "manuelbcd/security-playground:mend-1.0.9",
+            "registry": "manuelbcd",
+            "repository": "security-playground",
+            "scanResultID": "17e2cb042aed0825eab6b7c4af761812"
+        },
+        "name": "security-playground",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2273c145942465bd6f7a61e71fcb43aad8c0997efd69dc8b2e2cda7ae79b90ef95%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 39,
+            "hasExploit": true,
+            "highSeverityCount": 563,
+            "lowSeverityCount": 90,
+            "mediumSeverityCount": 1092,
+            "negligibleSeverityCount": 1058
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "1e08837ded2d52c4a6ec404b14837b4d",
+        "labels": null,
+        "lastSeen": 1721321210780,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1715090058990",
+            "digest": "sha256:3417bd2562d3b059c39a4dd57a16fbe710581de96a10a7b5fe76802b9ede0b32",
+            "id": "sha256:e9f48fefad2d550dc1e56d92839e4c707441c89d3779a37d5ae3a0b086f80ff6",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/agent-slim:13.1.1",
+            "registry": "quay.io",
+            "repository": "sysdig/agent-slim",
+            "scanResultID": "17e3198b6de611dfb88562484df69722"
+        },
+        "name": "sysdig/agent-slim",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22e9f48fefad2d550dc1e56d92839e4c707441c89d3779a37d5ae3a0b086f80ff6%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 39,
+            "mediumSeverityCount": 28,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "832d52b1d0f2aa9f194557d397e3bc12",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1701734810096",
+            "digest": "mcr.microsoft.com/oss/kubernetes/autoscaler/addon-resizer:1.8.20",
+            "id": "sha256:5a35adb36da915f659ebc2bed9dc0a3e79fcf1750a61adfe40efde03e4a73f11",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/autoscaler/addon-resizer:1.8.20",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/autoscaler/addon-resizer",
+            "scanResultID": "17e333c3bbb7e8872eb370adad2245e2"
+        },
+        "name": "oss/kubernetes/autoscaler/addon-resizer",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%225a35adb36da915f659ebc2bed9dc0a3e79fcf1750a61adfe40efde03e4a73f11%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "3d848a1baecf3c5a7e56d843d0f9fb09",
+        "labels": null,
+        "lastSeen": 1721321395213,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715516637421",
+            "digest": "sha256:ffd281cd58107a0dd7a87410f66e9f881c205ad129363ad8b7438da010ad4aa1",
+            "id": "sha256:17287389620f0b4089b2fb392f15c4f9f2075386a5a4600fb8a789bc88527895",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-analyzer:1.43.3",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-analyzer",
+            "scanResultID": "17e333fdc637ca51c6523daded71f512"
+        },
+        "name": "sysdig/kspm-analyzer",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2217287389620f0b4089b2fb392f15c4f9f2075386a5a4600fb8a789bc88527895%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 20,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "4c49b792acbcbe9766911b6345e37dc9",
+        "labels": null,
+        "lastSeen": 1721321394886,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715750757661",
+            "digest": "sha256:74525faa18673000281eb819a52e4c00a90d571285c1a1041946ea3f0a2b6116",
+            "id": "sha256:47c8fdc1eea50089f4506cfa69488e3952e8e380859a8dafc1cc4d271dbe855f",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/image-sbom-extractor:0.7.6",
+            "registry": "quay.io",
+            "repository": "sysdig/image-sbom-extractor",
+            "scanResultID": "17e337babef391e8c9ff335bb0ea25c2"
+        },
+        "name": "sysdig/image-sbom-extractor",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2247c8fdc1eea50089f4506cfa69488e3952e8e380859a8dafc1cc4d271dbe855f%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "1173a1ce80315ae6044883b2fe893eef",
+        "labels": null,
+        "lastSeen": 1721321210780,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715181217497",
+            "digest": "sha256:c3a717d6613b60b320cdc4fd287d47e6563cbeebe750f3c60fd74186a4070ee3",
+            "id": "sha256:83e6a255388d0d95e64658c4496d666f83157c53a80d6a07a2d2c9696d5629a8",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/vuln-host-scanner:0.9.1",
+            "registry": "quay.io",
+            "repository": "sysdig/vuln-host-scanner",
+            "scanResultID": "17e333cc59d262847a0afd14ceae8f22"
+        },
+        "name": "sysdig/vuln-host-scanner",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2283e6a255388d0d95e64658c4496d666f83157c53a80d6a07a2d2c9696d5629a8%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "23b9cd067e370db45180d6ff3b49973b",
+        "labels": null,
+        "lastSeen": 1721321394365,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715750713360",
+            "digest": "sha256:dc2a20dd77a3e17201f35feeaad4a40439654876b129f1b75e55b35e33a0848d",
+            "id": "sha256:802c83795aa6c29cb2710a3847ce71f46d78f3f3614e42d845a762d20c0548cb",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/runtime-status-integrator:0.7.6",
+            "registry": "quay.io",
+            "repository": "sysdig/runtime-status-integrator",
+            "scanResultID": "17e337b97515cc4765bca9014d8281c2"
+        },
+        "name": "sysdig/runtime-status-integrator",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22802c83795aa6c29cb2710a3847ce71f46d78f3f3614e42d845a762d20c0548cb%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "a5b547e0e64b5b96f7538710c4d10132",
+        "labels": null,
+        "lastSeen": 1721321394365,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715781189729",
+            "digest": "sha256:687c3526cf5895c8476b424e27faa01304d189dec56145344d67f99dc9fb3d78",
+            "id": "sha256:78d026dca82c0b1cefa4853a45bc06d8d4f450a27aac32299ec720848c101998",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-collector:1.39.1",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-collector",
+            "scanResultID": "17e2e52f14ed98be976f10c5fd28efd2"
+        },
+        "name": "sysdig/kspm-collector",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2278d026dca82c0b1cefa4853a45bc06d8d4f450a27aac32299ec720848c101998%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 20,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "7080ab7296e9270784feca6f7e9d758f",
+        "labels": null,
+        "lastSeen": 1721310825601,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1710752435710",
+            "digest": "sha256:03ea15af9109cb253825648529dfea8a4b61c9ee0e6b0e12d1984ace1a8e6b49",
+            "id": "sha256:416d063108d4b764aaff3fada34961a3a7c508128e67684479cdb3e2a9618f79",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/vuln-host-scanner:0.8.0",
+            "registry": "quay.io",
+            "repository": "sysdig/vuln-host-scanner",
+            "scanResultID": "17e32b7fb3ead7da1d79cba7db5b09c2"
+        },
+        "name": "sysdig/vuln-host-scanner",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22416d063108d4b764aaff3fada34961a3a7c508128e67684479cdb3e2a9618f79%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 12,
+            "lowSeverityCount": 14,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "b5d8020a465b7877e9b192a196f9e462",
+        "labels": null,
+        "lastSeen": 1721310825601,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1709821910671",
+            "digest": "sha256:5c8c1a228038241104b4a745f6f5bf9a5927f0e23fd1ddd2b17bc32d94433d07",
+            "id": "sha256:0b5fbe667947c87b39c9e53ce39b5051be253e708e54633c444a6a6074f3e7ba",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/vuln-runtime-scanner:1.6.10",
+            "registry": "quay.io",
+            "repository": "sysdig/vuln-runtime-scanner",
+            "scanResultID": "17e32b7fb41fce569efa1d20c5491832"
+        },
+        "name": "sysdig/vuln-runtime-scanner",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%220b5fbe667947c87b39c9e53ce39b5051be253e708e54633c444a6a6074f3e7ba%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 9,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 7,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "fecc16fa20b0ed084257de1fd75b075b",
+        "labels": null,
+        "lastSeen": 1721321150510,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1713623907072",
+            "digest": "mcr.microsoft.com/oss/kubernetes-csi/azurefile-csi:v1.29.5",
+            "id": "sha256:7e0c87efb66e35f186590a03dd1fed8cee9a4278097b804ded049909a88e721d",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes-csi/azurefile-csi:v1.29.5",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes-csi/azurefile-csi",
+            "scanResultID": "17e3342c73f2b4b6814175ab0886a2e2"
+        },
+        "name": "oss/kubernetes-csi/azurefile-csi",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%227e0c87efb66e35f186590a03dd1fed8cee9a4278097b804ded049909a88e721d%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 4,
+            "hasExploit": true,
+            "highSeverityCount": 39,
+            "lowSeverityCount": 5,
+            "mediumSeverityCount": 57,
+            "negligibleSeverityCount": 76
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "4ab27ef118b2b111a9257f729da4c9a3",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 10.13",
+            "created": "1696266011265",
+            "digest": "sha256:70fbf9373dab1ac1d4130640f6ea819ac30b385b1c20e2d34148cf0954b3d657",
+            "id": "sha256:9b8e96e280960683f84f7c977bc817c166efa1a9a98466057d96bd222fdf32df",
+            "os": "linux",
+            "pullString": "manuelbcd/security-playground:1.0.6",
+            "registry": "manuelbcd",
+            "repository": "security-playground",
+            "scanResultID": "17e33426812bccde585d8f6ba0ae5c32"
+        },
+        "name": "security-playground",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%229b8e96e280960683f84f7c977bc817c166efa1a9a98466057d96bd222fdf32df%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 39,
+            "hasExploit": true,
+            "highSeverityCount": 562,
+            "lowSeverityCount": 90,
+            "mediumSeverityCount": 1092,
+            "negligibleSeverityCount": 1058
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "dd98ff9efd6a6a29a84320060692a077",
+        "labels": null,
+        "lastSeen": 1721321150510,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1705347574806",
+            "digest": "mcr.microsoft.com/oss/kubernetes/apiserver-network-proxy/agent:v0.1.6-hotfix.20240116",
+            "id": "sha256:186473cf0a31771a84572c2245ab61e4b1e26340ca151169868dc1c666d481a0",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/apiserver-network-proxy/agent:v0.1.6-hotfix.20240116",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/apiserver-network-proxy/agent",
+            "scanResultID": "17e3341a21dfadfc350c8aec80ad56d2"
+        },
+        "name": "oss/kubernetes/apiserver-network-proxy/agent",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22186473cf0a31771a84572c2245ab61e4b1e26340ca151169868dc1c666d481a0%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "bc8818ed1ec31530ff7334b89deb11db",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1697657884697",
+            "digest": "sha256:bfa42cb2a0200cef7d384635225ca670f08c063341fc401bd27bae67ba6afc04",
+            "id": "sha256:b9ae9391d5db4e24693df5efcac555ca3a24df28cd36bdf0e5fd38d217afc2e1",
+            "os": "linux",
+            "pullString": "dockersamples/examplevotingapp_worker",
+            "registry": "dockersamples",
+            "repository": "examplevotingapp_worker",
+            "scanResultID": "17e2b086ad540e98e7c4a7d22d134262"
+        },
+        "name": "examplevotingapp_worker",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22b9ae9391d5db4e24693df5efcac555ca3a24df28cd36bdf0e5fd38d217afc2e1%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 5,
+            "hasExploit": true,
+            "highSeverityCount": 32,
+            "lowSeverityCount": 7,
+            "mediumSeverityCount": 45,
+            "negligibleSeverityCount": 72
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "0e1ac38533cd4a6e76337fbe5925ea45",
+        "labels": null,
+        "lastSeen": 1721321210825,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683307506760",
+            "digest": "602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.12.6-eksbuild.2",
+            "id": "sha256:267e74075ea628c23e584bfa1c286bdd2e9d44c07825758ba5e7fefe64379c5d",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/amazon-k8s-cni:v1.12.6-eksbuild.2",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "amazon-k8s-cni",
+            "scanResultID": "17e3341afc4017d28f2bd3ced12383d2"
+        },
+        "name": "amazon-k8s-cni",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22267e74075ea628c23e584bfa1c286bdd2e9d44c07825758ba5e7fefe64379c5d%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 10,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 10,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "f78bff70f4e4a16989cf21ec0cbb8093",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683792367274",
+            "digest": "sha256:74e13dfff1d73b0e39ae5883b5843d1672258b34f7d4757995c72d92a26bed1e",
+            "id": "sha256:740df47bb1e0dddea951c34487bb9fe04c5cd538c781a3a1c631b27236280004",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-node-driver-registrar:v2.8.0-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/csi-node-driver-registrar",
+            "scanResultID": "17e333a608489760bcad22b41597ce82"
+        },
+        "name": "eks/csi-node-driver-registrar",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22740df47bb1e0dddea951c34487bb9fe04c5cd538c781a3a1c631b27236280004%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "a62b6e9d69e7e4a87748abcb0bea9172",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683567236028",
+            "digest": "sha256:59f137fba1fae3999eef1c8f8726ae79dd2b5a4f3e7fef937c41f2ce65cccb86",
+            "id": "sha256:8ed45f88478ccf0e2e1d667087e413e24e2944e00c2c71940015bf4727e9e95c",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/csi-provisioner",
+            "scanResultID": "17e333b2dc520f3e7cd4516dc36c2912"
+        },
+        "name": "eks/csi-provisioner",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%228ed45f88478ccf0e2e1d667087e413e24e2944e00c2c71940015bf4727e9e95c%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "1b287513dcd93e227c8ac2e3b85d4cc6",
+        "labels": null,
+        "lastSeen": 1721321210825,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683792254026",
+            "digest": "sha256:25b4d3f9cf686ac464a742ead16e705da3adcfe574296dd75c5c05ec7473a513",
+            "id": "sha256:59536f7b0dc6923c70debeecf3aba7d9a83f7f3a1a0cd1631c97195cb079d897",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/livenessprobe",
+            "scanResultID": "17e333ea2e536bf4af0f9f85ccdc4012"
+        },
+        "name": "eks/livenessprobe",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2259536f7b0dc6923c70debeecf3aba7d9a83f7f3a1a0cd1631c97195cb079d897%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "d50aec601602e238a6ce138608327ab2",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683566753036",
+            "digest": "sha256:481be7a637be7b0cc4509d38c82834f47aa2b058111653f0a735b574bd1bfa23",
+            "id": "sha256:af61939229705fce3d6b609f97cd89ba7e69972f827e11d14698d707b11e90e4",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/csi-resizer",
+            "scanResultID": "17e2ffb67d20ccbb2f682cbbf43a04f2"
+        },
+        "name": "eks/csi-resizer",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22af61939229705fce3d6b609f97cd89ba7e69972f827e11d14698d707b11e90e4%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "a704663c520a88d14d60e62078e321ea",
+        "labels": null,
+        "lastSeen": 1721321210912,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1687204864075",
+            "digest": "sha256:71885dc32a4a1d7c9a1911589f44dcb92a28551fb60da05b6f2b246e59dac90e",
+            "id": "sha256:379136d3e4080fab91685199b74d06651427f037de691464b7f6256a425d9de0",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/aws-ebs-csi-driver",
+            "scanResultID": "17e334286fca6c355cacd4b8e9db0672"
+        },
+        "name": "eks/aws-ebs-csi-driver",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22379136d3e4080fab91685199b74d06651427f037de691464b7f6256a425d9de0%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 13,
+            "lowSeverityCount": 5,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "446840920206f3974926df4d4903b32e",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683567076180",
+            "digest": "sha256:51f3764316d37f0197a3a6da0f7d0ba90886acb4ef84a910819adcacbf6f4b1b",
+            "id": "sha256:5e65967c0714a5c2a78e1209f363372a2a279128c55d573261221c3c140d56f5",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/csi-snapshotter",
+            "scanResultID": "17e3342c1b07c84d5ac1fb6e91972472"
+        },
+        "name": "eks/csi-snapshotter",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%225e65967c0714a5c2a78e1209f363372a2a279128c55d573261221c3c140d56f5%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "0e33ee7daeab4bcb6df46bbc9cacbbad",
+        "labels": null,
+        "lastSeen": 1721321210780,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1683566631620",
+            "digest": "sha256:616ab52a395db8f80e65a333442fd9f4551dfd933249e595ae7dfd9aa301286e",
+            "id": "sha256:d3470794eab059d3e2ac68e7629c7835122bdce52311099823f3c7b3cae944a5",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/csi-attacher",
+            "scanResultID": "17e33426147645c046e49c49a1570ef2"
+        },
+        "name": "eks/csi-attacher",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22d3470794eab059d3e2ac68e7629c7835122bdce52311099823f3c7b3cae944a5%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "d52418ac3b081c5ef070f7df464a8ea6",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1682457293969",
+            "digest": "sha256:29e5328ddaad2dce9f7d818201094ad5a78d267e37111a2e9f059430a9a11370",
+            "id": "sha256:a3e4f36da6d2f1993c39b9aeb9f4e1cf0bda6f749b64f8f20ba61aded48797f9",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/coredns",
+            "scanResultID": "17e2e5673c2cab4deb16fdea467b88c2"
+        },
+        "name": "eks/coredns",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22a3e4f36da6d2f1993c39b9aeb9f4e1cf0bda6f749b64f8f20ba61aded48797f9%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "57e55740c299fc2d892ec43e1242504c",
+        "labels": null,
+        "lastSeen": 1721321210867,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "amazonlinux 2 (Karoo)",
+            "created": "1681505574552",
+            "digest": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.27.1-minimal-eksbuild.1",
+            "id": "sha256:ee0b1225fcfed02210aaa586cee38dc69d22d71cc14b206f45ccb6572e9db50e",
+            "os": "linux",
+            "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/kube-proxy:v1.27.1-minimal-eksbuild.1",
+            "registry": "602401143452.dkr.ecr.us-east-1.amazonaws.com",
+            "repository": "eks/kube-proxy",
+            "scanResultID": "17e334262cc1e276e90102c490cc79e2"
+        },
+        "name": "eks/kube-proxy",
+        "platform": "AWS Elastic Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22ee0b1225fcfed02210aaa586cee38dc69d22d71cc14b206f45ccb6572e9db50e%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 15,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 13,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "20a2956dfa77efe2b2bd051569b86e46",
+        "labels": null,
+        "lastSeen": 1721321394276,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.6",
+            "created": "1714410059252",
+            "digest": "sha256:19a56238f0167c1f83ace0a1e8429141d7f95fc37218af3019d60941bdd89ef0",
+            "id": "sha256:ce2869aaeedc50b5d68f8ff1e92834e6a4e5a74d6bd518debd16e8730b37778e",
+            "os": "linux",
+            "pullString": "us-west1-docker.pkg.dev/snyk-cx-se-demo/demo/juice-shop-goof:frontend",
+            "registry": "us-west1-docker.pkg.dev",
+            "repository": "snyk-cx-se-demo/demo/juice-shop-goof",
+            "scanResultID": "17e2cae947e7a9d19257a7e2ce0bc162"
+        },
+        "name": "snyk-cx-se-demo/demo/juice-shop-goof",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22ce2869aaeedc50b5d68f8ff1e92834e6a4e5a74d6bd518debd16e8730b37778e%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 12,
+            "hasExploit": true,
+            "highSeverityCount": 32,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 44,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "8701c04cab652ca3d3699150f5b2efc5",
+        "labels": null,
+        "lastSeen": 1721321395083,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1704947123774",
+            "digest": "sha256:7e93b4bfa310d477fd8a977d5772a2f92dc746152906d31b66e872f919de3b5e",
+            "id": "sha256:6c64a244676e453ee0b04cfb75ba87b7fcf7bf6435716447cb9eb5ab76af24f4",
+            "os": "linux",
+            "pullString": "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.13@sha256:7e93b4bfa310d477fd8a977d5772a2f92dc746152906d31b66e872f919de3b5e",
+            "registry": "gke.gcr.io",
+            "repository": "prometheus-to-sd",
+            "scanResultID": "17e34e3dd61fe7ae44da2c53999d9e32"
+        },
+        "name": "prometheus-to-sd",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%226c64a244676e453ee0b04cfb75ba87b7fcf7bf6435716447cb9eb5ab76af24f4%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "b87e3a06b897bba28d30593427edf444",
+        "labels": null,
+        "lastSeen": 1721321394483,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1707374162158",
+            "digest": "sha256:274afbfd520aef0933f1fefabddbb33144700982965f9e3632caabb055e912c6",
+            "id": "sha256:cf9076ec4ba6a1d9ac80cc515a227d68ddd17b4676f2d9858a155efdba32ff21",
+            "os": "linux",
+            "pullString": "gke.gcr.io/cluster-proportional-autoscaler:v1.8.10-gke.3@sha256:274afbfd520aef0933f1fefabddbb33144700982965f9e3632caabb055e912c6",
+            "registry": "gke.gcr.io",
+            "repository": "cluster-proportional-autoscaler",
+            "scanResultID": "17e337b7179e7d2987b05b10cf54b222"
+        },
+        "name": "cluster-proportional-autoscaler",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22cf9076ec4ba6a1d9ac80cc515a227d68ddd17b4676f2d9858a155efdba32ff21%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "736747c9e030b660614e6d06a66ae33b",
+        "labels": null,
+        "lastSeen": 1721321394114,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1715940797052",
+            "digest": "sha256:7d333d86fe5da5e599f86cb394b419819e2c0bd0bffe94392fc651c0eff50230",
+            "id": "sha256:cf2aef181456dd929bdd7a21d4c9635ccb58b88806aee8f97e43c4d805ac818d",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/vuln-host-scanner:0.10.0",
+            "registry": "quay.io",
+            "repository": "sysdig/vuln-host-scanner",
+            "scanResultID": "17e333e1820f244048fe266161103fc2"
+        },
+        "name": "sysdig/vuln-host-scanner",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22cf2aef181456dd929bdd7a21d4c9635ccb58b88806aee8f97e43c4d805ac818d%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "b1c24a5c38286815f985b00f04564f84",
+        "labels": null,
+        "lastSeen": 1721321210780,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "alpine 3.11.10",
+            "created": "1618163398786",
+            "digest": "sha256:f3b53f987643ce2f5d8f5e261e9740c6debaa2e9173b2bb9334edc766ce66534",
+            "id": "sha256:80f713993649b34c0fc55b2ca65fe9a29ece054832eb3dd83b4c6625f2d3f689",
+            "os": "linux",
+            "pullString": "docker.io/bkimminich/juice-shop:v12.7.0",
+            "registry": "docker.io",
+            "repository": "bkimminich/juice-shop",
+            "scanResultID": "17e333e2c1004350facf3087111fd502"
+        },
+        "name": "bkimminich/juice-shop",
+        "platform": "Docker Hub",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2280f713993649b34c0fc55b2ca65fe9a29ece054832eb3dd83b4c6625f2d3f689%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 36,
+            "hasExploit": true,
+            "highSeverityCount": 86,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 33,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "59c2b141d33df68e6864151cd113ca61",
+        "labels": null,
+        "lastSeen": 1721321395213,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1706598283000",
+            "digest": "sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332",
+            "id": "sha256:bb1af7093b4f85ffb0485d8bb68f1c724419a53e206148f69b67e8b954be1333",
+            "os": "linux",
+            "pullString": "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332",
+            "registry": "gke.gcr.io",
+            "repository": "gke-metrics-collector",
+            "scanResultID": "17e337b8560f1ab7467b0b67326fb922"
+        },
+        "name": "gke-metrics-collector",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22bb1af7093b4f85ffb0485d8bb68f1c724419a53e206148f69b67e8b954be1333%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "abd690d6fa7201e28245fc1e83d89780",
+        "labels": null,
+        "lastSeen": 1721321394365,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1717560813915",
+            "digest": "sha256:37c7ea1dd7a0e4b1f8361701acabdb19d7bb16ea7b68d346b7999416cb50d744",
+            "id": "sha256:8b28163dfec201428ee50050f2953cf70add466ccd1dcf0d5ac02bd24ca71fca",
+            "os": "linux",
+            "pullString": "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.29@sha256:37c7ea1dd7a0e4b1f8361701acabdb19d7bb16ea7b68d346b7999416cb50d744",
+            "registry": "gke.gcr.io",
+            "repository": "prometheus-to-sd",
+            "scanResultID": "17e338d6fd94b53fbf6377e7e9ec7b62"
+        },
+        "name": "prometheus-to-sd",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%228b28163dfec201428ee50050f2953cf70add466ccd1dcf0d5ac02bd24ca71fca%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "3629b87c30d98bcee8e6ccd5306c6807",
+        "labels": null,
+        "lastSeen": 1721321395283,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1718789342000",
+            "digest": "sha256:6a2226a1aedf6c13988dbf2a156d3a385821eceb97781229f1d0378c0da770a3",
+            "id": "sha256:475fd44fd7c628973a0cb87a3e10d096f1530e058777d92c8457c9bdef0b7996",
+            "os": "linux",
+            "pullString": "gke.gcr.io/gke-metrics-collector:20240618_2300_RC0@sha256:6a2226a1aedf6c13988dbf2a156d3a385821eceb97781229f1d0378c0da770a3",
+            "registry": "gke.gcr.io",
+            "repository": "gke-metrics-collector",
+            "scanResultID": "17e338d749776343f7105a9543c84cb2"
+        },
+        "name": "gke-metrics-collector",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22475fd44fd7c628973a0cb87a3e10d096f1530e058777d92c8457c9bdef0b7996%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "cd83d1b7d3049ec42eb9fd37ba61733d",
+        "labels": null,
+        "lastSeen": 1721321395213,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1717560771730",
+            "digest": "sha256:0f8a9a891ded7d06bb331518a268bdf1edd70f33b876c01c0fee28ddd4cf1702",
+            "id": "sha256:64d861d1042dd505286655566c66094e0d405bb3449fcb74e0b34ed2e834a095",
+            "os": "linux",
+            "pullString": "gke.gcr.io/event-exporter:v0.4.4-gke.21@sha256:0f8a9a891ded7d06bb331518a268bdf1edd70f33b876c01c0fee28ddd4cf1702",
+            "registry": "gke.gcr.io",
+            "repository": "event-exporter",
+            "scanResultID": "17e338db95bd1cba26485e074cf15092"
+        },
+        "name": "event-exporter",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2264d861d1042dd505286655566c66094e0d405bb3449fcb74e0b34ed2e834a095%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "98f336320556c514baa20d819e386ee0",
+        "labels": null,
+        "lastSeen": 1721321394697,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1717561464980",
+            "digest": "sha256:3d4e3fa9e777e197a1fc9489b2da3976d2e694532efd846603a48b57b09e51ec",
+            "id": "sha256:aa8534dc5a6741bedfc0c069d74da375556a7cda44904633efc6ec9077bb60da",
+            "os": "linux",
+            "pullString": "gke.gcr.io/fluent-bit-gke-exporter:v0.26.0-gke.23@sha256:3d4e3fa9e777e197a1fc9489b2da3976d2e694532efd846603a48b57b09e51ec",
+            "registry": "gke.gcr.io",
+            "repository": "fluent-bit-gke-exporter",
+            "scanResultID": "17e338e1df2de838c28f007897e97f92"
+        },
+        "name": "fluent-bit-gke-exporter",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22aa8534dc5a6741bedfc0c069d74da375556a7cda44904633efc6ec9077bb60da%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "fc3ced2693212bae9d3e36837b0be0ad",
+        "labels": null,
+        "lastSeen": 1721310825161,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1711466353114",
+            "digest": "sha256:896081a61096541ef330b125b4c65cad48f7b471279f46f19b53004eb68892a3",
+            "id": "sha256:27945fc6298a7d73d7bca6443b9477d42a1aeccae615ae7ddbf681a6ddecf475",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-analyzer:1.42.5",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-analyzer",
+            "scanResultID": "17e32b7fb3ccf22d7983595ab12fb332"
+        },
+        "name": "sysdig/kspm-analyzer",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2227945fc6298a7d73d7bca6443b9477d42a1aeccae615ae7ddbf681a6ddecf475%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "13da37d6ec1afd57aaced315a0e1aa5c",
+        "labels": null,
+        "lastSeen": 1721310825740,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1711466531174",
+            "digest": "sha256:f3efdc77cc74679014e284398a1337ab05b98e62edfc0eb73628a724a36b9a83",
+            "id": "sha256:dadeb2a807c34a5fb292ce2f695949db34294ba730e01df75b842225f6726444",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-collector:1.38.5",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-collector",
+            "scanResultID": "17e32b7fb3fc6288c63459f214986b82"
+        },
+        "name": "sysdig/kspm-collector",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22dadeb2a807c34a5fb292ce2f695949db34294ba730e01df75b842225f6726444%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "e17c1546860b81867efed436a0a15ee4",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1716270598269",
+            "digest": "mcr.microsoft.com/oss/kubernetes/coredns:v1.9.4-hotfix.20240520",
+            "id": "sha256:8734b0d06daa4a301d20584e4e80e89d466a7c4eec9cb886edf7e3f00b45ab4c",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/coredns:v1.9.4-hotfix.20240520",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/coredns",
+            "scanResultID": "17e3342db3f3ed990936cd6fbec02f72"
+        },
+        "name": "oss/kubernetes/coredns",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%228734b0d06daa4a301d20584e4e80e89d466a7c4eec9cb886edf7e3f00b45ab4c%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "ac4b832c20be69d638acbea16ffcafbe",
+        "labels": null,
+        "lastSeen": 1721321394886,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1715970118116",
+            "digest": "sha256:9e3116023277e6bc8125e4f8f4f87eded99614f795d12bd65278341ac23b2259",
+            "id": "sha256:e84010ee26b7b7e15da67b94b2b597dd2f3bfd4a9976bc35dee97c91d3e2a3d2",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/agent-slim:13.2.0",
+            "registry": "quay.io",
+            "repository": "sysdig/agent-slim",
+            "scanResultID": "17e2e55fc11ed3e0223fdf5f05d808b2"
+        },
+        "name": "sysdig/agent-slim",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22e84010ee26b7b7e15da67b94b2b597dd2f3bfd4a9976bc35dee97c91d3e2a3d2%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 39,
+            "mediumSeverityCount": 28,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "779ca2a6ca73dbbc9911d29243e9cfc6",
+        "labels": null,
+        "lastSeen": 1721321150481,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1716820887409",
+            "digest": "sha256:57b608c3ee51be0ae75f9062fcdef54bae38c52be6699b7d52e2dca622e71b00",
+            "id": "sha256:b9a65b90f8194f83e4a1600fca9f4375737c1b2328f5625ee5db60a920699a2d",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/image-sbom-extractor:0.8.3",
+            "registry": "quay.io",
+            "repository": "sysdig/image-sbom-extractor",
+            "scanResultID": "17e2ffb7fcddc7f31e8e0a2fbf8062c2"
+        },
+        "name": "sysdig/image-sbom-extractor",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22b9a65b90f8194f83e4a1600fca9f4375737c1b2328f5625ee5db60a920699a2d%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "1263c2a828cff5688647520a49456bc0",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.2",
+            "created": "1698433238765",
+            "digest": "sha256:797919beacc239d80f6c568e170ad4be0a6afd0ff0567e89d45f1dc3350b87f7",
+            "id": "sha256:a79da240427f07d66e11bc6a6b2cf9dd5085cdd71bce0e1d4eec3e219db9eb2c",
+            "os": "linux",
+            "pullString": "dockersamples/examplevotingapp_vote",
+            "registry": "dockersamples",
+            "repository": "examplevotingapp_vote",
+            "scanResultID": "17e34e43aff2cc8dc71e0ca663b03a32"
+        },
+        "name": "examplevotingapp_vote",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22a79da240427f07d66e11bc6a6b2cf9dd5085cdd71bce0e1d4eec3e219db9eb2c%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 4,
+            "hasExploit": true,
+            "highSeverityCount": 35,
+            "lowSeverityCount": 4,
+            "mediumSeverityCount": 59,
+            "negligibleSeverityCount": 76
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "698e35972510fd538581e607083ae58b",
+        "labels": null,
+        "lastSeen": 1721321150603,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1718270408376",
+            "digest": "sha256:90464936ad8caff3b73b6cec5060dbc746c8b589606d3e0d5c9dcf806fd5c443",
+            "id": "sha256:f17595631f3aa1d7f6661ac3ed7f17986f22c7c12894ea31558a18b5aeabb7c3",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-analyzer:1.43.4",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-analyzer",
+            "scanResultID": "17e3342da5bbdf22b0cf606b470d7ad2"
+        },
+        "name": "sysdig/kspm-analyzer",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22f17595631f3aa1d7f6661ac3ed7f17986f22c7c12894ea31558a18b5aeabb7c3%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 29,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "3c25b7bcb579df478f8d065a1663aa25",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "alpine 3.20.1",
+            "created": "1716419879000",
+            "digest": "sha256:de14eedfbd1fc871d0f5aa1773fd80743930e45354d035b6f3b551e7ffa44df8",
+            "id": "sha256:38a44d79682281c78810ce4f57a9a6c65e2307a1c6c4c7719092814b1ab5170f",
+            "os": "linux",
+            "pullString": "redis:alpine",
+            "registry": "local",
+            "repository": "redis",
+            "scanResultID": "17e2cb05897bf2c6eeb1d4e818c529f2"
+        },
+        "name": "redis",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2238a44d79682281c78810ce4f57a9a6c65e2307a1c6c4c7719092814b1ab5170f%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "d54ef296bdc80579f3ac88ff4daa3eef",
+        "labels": null,
+        "lastSeen": 1721321150575,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "alpine 3.20.1",
+            "created": "1717448276000",
+            "digest": "sha256:ede3a168dae0d2154440c2b1b2c7773201bfa969d85a1859c44b6f4ab2df0ef7",
+            "id": "sha256:00b2bb697bff61f4168a1d4b063cbf31b6157c8dd84b494967fd872251b57789",
+            "os": "linux",
+            "pullString": "postgres:15-alpine",
+            "registry": "local",
+            "repository": "postgres",
+            "scanResultID": "17e34e3d52e7f6ade12bc32853fcbdc2"
+        },
+        "name": "postgres",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2200b2bb697bff61f4168a1d4b063cbf31b6157c8dd84b494967fd872251b57789%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "7c41d10505941cfddea07566c3c0e9b5",
+        "labels": null,
+        "lastSeen": 1721321150481,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1718270385919",
+            "digest": "sha256:fbdd85190c7f7e165608ea470d1c4c1d841b7c8f0a8bced42ff3b2986f558cbb",
+            "id": "sha256:f9075248a330705d742030ea0c93f29d93962ab4a014fb08a4a77c397d3b1f30",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/kspm-collector:1.39.2",
+            "registry": "quay.io",
+            "repository": "sysdig/kspm-collector",
+            "scanResultID": "17e2cacc88c132567de2d93007fbec52"
+        },
+        "name": "sysdig/kspm-collector",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22f9075248a330705d742030ea0c93f29d93962ab4a014fb08a4a77c397d3b1f30%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 3,
+            "lowSeverityCount": 29,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "0d989d6729ff45fc367c77da83b4d807",
+        "labels": null,
+        "lastSeen": 1721321150662,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "alpine 3.19.1",
+            "created": "1707473301329",
+            "digest": "sha256:44ae030925d2660355e18fb647dc325c54705592836a0af25211141baa648350",
+            "id": "sha256:ff5c5f68e3efadc788d3f5a61dc41801dab6312c8750c95f0a7f11787518c651",
+            "os": "linux",
+            "pullString": "manuelbcd/go-goat:1.2",
+            "registry": "manuelbcd",
+            "repository": "go-goat",
+            "scanResultID": "17e33428710aaf9a532f7e33c0148622"
+        },
+        "name": "go-goat",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22ff5c5f68e3efadc788d3f5a61dc41801dab6312c8750c95f0a7f11787518c651%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 17,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "26984cdf327080b3fb299e8b5a36fc2e",
+        "labels": null,
+        "lastSeen": 1721321150510,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1718371651715",
+            "digest": "sha256:a6b78a83405c2730cdd587f5eff9e8a7d5cfe62b9d7a2ef99afdd558944fc30f",
+            "id": "sha256:440d5549b8cef2c48577ceef21c3db6804ffa0214334d793e84ae052e43c3e3e",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/vuln-host-scanner:0.10.1",
+            "registry": "quay.io",
+            "repository": "sysdig/vuln-host-scanner",
+            "scanResultID": "17e2e5308d77e01ea9062ce22be61dc2"
+        },
+        "name": "sysdig/vuln-host-scanner",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22440d5549b8cef2c48577ceef21c3db6804ffa0214334d793e84ae052e43c3e3e%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 7,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "06758d95ed385d43830bb693fe14a7ec",
+        "labels": null,
+        "lastSeen": 1721321150545,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.4",
+            "created": "1717772401055",
+            "digest": "sha256:efd8650459c124685a4e80db44bdf50a5fb9e3e24192e542078345d6e4e9b425",
+            "id": "sha256:ce8dea84ee43318b96b36968de06b669653880891b90d861cdb899475e88ee1a",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/agent-slim:13.2.1",
+            "registry": "quay.io",
+            "repository": "sysdig/agent-slim",
+            "scanResultID": "17e33405cbd024e6d462860f249472e2"
+        },
+        "name": "sysdig/agent-slim",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22ce8dea84ee43318b96b36968de06b669653880891b90d861cdb899475e88ee1a%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 33,
+            "mediumSeverityCount": 24,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "15a38b383c4eefb062b057811b0ec4ef",
+        "labels": null,
+        "lastSeen": 1721321150510,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "redhat 9.3",
+            "created": "1716820880559",
+            "digest": "sha256:58d0fa8182b9e498329daa74d8f748375c397e6f53f3a6bb0a956d1e814dce67",
+            "id": "sha256:fe81d0ea56a5e674b94c97b97d1cd18390dff0a49bb8049a88c0c5191f8afe9c",
+            "os": "linux",
+            "pullString": "quay.io/sysdig/runtime-status-integrator:0.8.3",
+            "registry": "quay.io",
+            "repository": "sysdig/runtime-status-integrator",
+            "scanResultID": "17e2137f15d864196f50e368b3a16692"
+        },
+        "name": "sysdig/runtime-status-integrator",
+        "platform": "Quay.io",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22fe81d0ea56a5e674b94c97b97d1cd18390dff0a49bb8049a88c0c5191f8afe9c%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 13,
+            "mediumSeverityCount": 4,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "0ab19f1f422c296411ac223db698fee8",
+        "labels": null,
+        "lastSeen": 1721321150545,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.2",
+            "created": "1698116226069",
+            "digest": "sha256:0b8fe15d93c08b9b90ad2eba02af526c1bee8bc9fab162a6b93b3186aa0a5faf",
+            "id": "sha256:79a8264f906f0eb6540356eee079435f14591f58977cf6acfa64762ee6a8e663",
+            "os": "linux",
+            "pullString": "dockersamples/examplevotingapp_result",
+            "registry": "dockersamples",
+            "repository": "examplevotingapp_result",
+            "scanResultID": "17e2cad3dbf3352e20f70789b3aedb52"
+        },
+        "name": "examplevotingapp_result",
+        "platform": "Proprietary",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2279a8264f906f0eb6540356eee079435f14591f58977cf6acfa64762ee6a8e663%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 5,
+            "hasExploit": true,
+            "highSeverityCount": 31,
+            "lowSeverityCount": 3,
+            "mediumSeverityCount": 50,
+            "negligibleSeverityCount": 72
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "f18ca6f45d5b8cbd23966505aced2da6",
+        "labels": null,
+        "lastSeen": 1721321150481,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1717607744184",
+            "digest": "mcr.microsoft.com/aks/ip-masq-agent-v2:v0.1.11",
+            "id": "sha256:5c0df644f809a45c96c3a5f470391978e64d65014c71ab4fb8b20d136e3f616f",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/aks/ip-masq-agent-v2:v0.1.11",
+            "registry": "mcr.microsoft.com",
+            "repository": "aks/ip-masq-agent-v2",
+            "scanResultID": "17e333b2b3c39b389047cdb1ac766942"
+        },
+        "name": "aks/ip-masq-agent-v2",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%225c0df644f809a45c96c3a5f470391978e64d65014c71ab4fb8b20d136e3f616f%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 2,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 13
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "cfae84cd5bbc887cd53c7a98d5e97d39",
+        "labels": null,
+        "lastSeen": 1721321150448,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1716331407838",
+            "digest": "mcr.microsoft.com/azure-policy/policy-kubernetes-addon-prod:1.5.0",
+            "id": "sha256:34a5f629432ec70891c3a2023075a9c8a30ec454150a0501349770f3b7a5133c",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/azure-policy/policy-kubernetes-addon-prod:1.5.0",
+            "registry": "mcr.microsoft.com",
+            "repository": "azure-policy/policy-kubernetes-addon-prod",
+            "scanResultID": "17e2cb05306c8394d9de2d24165e7d32"
+        },
+        "name": "azure-policy/policy-kubernetes-addon-prod",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2234a5f629432ec70891c3a2023075a9c8a30ec454150a0501349770f3b7a5133c%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "7be53415534161fb2347c6eb36bf9f6b",
+        "labels": null,
+        "lastSeen": 1721321150575,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "alpine 3.18.4",
+            "created": "1716344081224",
+            "digest": "mcr.microsoft.com/oss/kubernetes-csi/azuredisk-csi:v1.29.6",
+            "id": "sha256:71a03ffc773253607349bf0c805c1f4afe459054d861cefe3027147ec6cdd53b",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes-csi/azuredisk-csi:v1.29.6",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes-csi/azuredisk-csi",
+            "scanResultID": "17e34e3dae3cffccf169ae754aaecb12"
+        },
+        "name": "oss/kubernetes-csi/azuredisk-csi",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2271a03ffc773253607349bf0c805c1f4afe459054d861cefe3027147ec6cdd53b%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 11,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "5933f53729c8d639fdf72bf92e43c67a",
+        "labels": null,
+        "lastSeen": 1721321150415,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1716331231013",
+            "digest": "mcr.microsoft.com/azure-policy/policy-kubernetes-webhook:1.5.0",
+            "id": "sha256:633863247a89954e67053cdf13b69dc7256988d051d085989e1ca6c8a3cc7a9d",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/azure-policy/policy-kubernetes-webhook:1.5.0",
+            "registry": "mcr.microsoft.com",
+            "repository": "azure-policy/policy-kubernetes-webhook",
+            "scanResultID": "17e333b061e803f180ea85bf09db43d2"
+        },
+        "name": "azure-policy/policy-kubernetes-webhook",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22633863247a89954e67053cdf13b69dc7256988d051d085989e1ca6c8a3cc7a9d%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "3d55a705c1fc9065e6549cf90490eb94",
+        "labels": null,
+        "lastSeen": 1721321150603,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1705462944792",
+            "digest": "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.12.0",
+            "id": "sha256:6f807c016d9206fef899d3d19b5597a9703215aa3d91fb4c4e72c9a990e957a2",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes-csi/livenessprobe:v2.12.0",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes-csi/livenessprobe",
+            "scanResultID": "17e33404dc8c21639ae80ae53a775322"
+        },
+        "name": "oss/kubernetes-csi/livenessprobe",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%226f807c016d9206fef899d3d19b5597a9703215aa3d91fb4c4e72c9a990e957a2%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "21dd368c6a40dcb6f08da68de4c7ce27",
+        "labels": null,
+        "lastSeen": 1721321150481,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1716883758844",
+            "digest": "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3",
+            "id": "sha256:ef4eeced0357719bc768d2c415ba0fb7c3a50a65142198f4b5a5017cafb77107",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/open-policy-agent/gatekeeper",
+            "scanResultID": "17e27c360296af13618f184173eb9942"
+        },
+        "name": "oss/open-policy-agent/gatekeeper",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22ef4eeced0357719bc768d2c415ba0fb7c3a50a65142198f4b5a5017cafb77107%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "41813a398ea591ad26ce26e1d8c2ed70",
+        "labels": null,
+        "lastSeen": 1721321150415,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.9",
+            "created": "-62135596800000",
+            "digest": "sha256:1c212ca377e57a5ac1e7aa980836451d85f24a73e1176c7c372aba3be2088cc7",
+            "id": "sha256:20893dc65200b8131ba16f3667183451feb081e63bf6fa3c73a39bc1a2fc8aee",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/aks/msi/addon-token-adapter:master.240510.2",
+            "registry": "mcr.microsoft.com",
+            "repository": "aks/msi/addon-token-adapter",
+            "scanResultID": "17e319a6fc8885ed0f761774485d7052"
+        },
+        "name": "aks/msi/addon-token-adapter",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2220893dc65200b8131ba16f3667183451feb081e63bf6fa3c73a39bc1a2fc8aee%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": false,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 11,
+            "negligibleSeverityCount": 14
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "e118fcc874df7885d9a2aa82c3d6af5e",
+        "labels": null,
+        "lastSeen": 1721321150633,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1713315817376",
+            "digest": "mcr.microsoft.com/oss/kubernetes/kube-proxy:v1.28.9",
+            "id": "sha256:1240867c553a3f569ff5693ee7f09b9c1da0851fe95e0b17c8f3a4520ff81af2",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/kube-proxy:v1.28.9",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/kube-proxy",
+            "scanResultID": "17e34e438704d5be48ad193f6ac12872"
+        },
+        "name": "oss/kubernetes/kube-proxy",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%221240867c553a3f569ff5693ee7f09b9c1da0851fe95e0b17c8f3a4520ff81af2%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 13
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "78a364e475a815a52e632a588cb3f621",
+        "labels": null,
+        "lastSeen": 1721321150545,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1713931174866",
+            "digest": "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.28.9",
+            "id": "sha256:e0a77fa775249b1886e487b7d83e0b53e2e9cd4f2bc1d6c0b42e1cacb1d361c2",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/azure-cloud-node-manager:v1.28.9",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/azure-cloud-node-manager",
+            "scanResultID": "17e3341936c0de334626123606fff282"
+        },
+        "name": "oss/kubernetes/azure-cloud-node-manager",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22e0a77fa775249b1886e487b7d83e0b53e2e9cd4f2bc1d6c0b42e1cacb1d361c2%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "b753975046e844c19af6127cc7054234",
+        "labels": null,
+        "lastSeen": 1721321150662,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.9",
+            "created": "1710979595181",
+            "digest": "mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.10.1",
+            "id": "sha256:085e8d3ecac62638c0b8890ffff9fdb23203666af824f60297d56b1aa89a843b",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes-csi/csi-node-driver-registrar:v2.10.1",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes-csi/csi-node-driver-registrar",
+            "scanResultID": "17e33380386d22a919a3a834c910f832"
+        },
+        "name": "oss/kubernetes-csi/csi-node-driver-registrar",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22085e8d3ecac62638c0b8890ffff9fdb23203666af824f60297d56b1aa89a843b%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 1,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "c59e95c197039151e63f6395a7b39dbe",
+        "labels": null,
+        "lastSeen": 1721321150510,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.7",
+            "created": "1690329931150",
+            "digest": "mcr.microsoft.com/oss/kubernetes/autoscaler/cluster-proportional-autoscaler:v1.8.9",
+            "id": "sha256:f818621acf10f23338ee77e25bca36f0bb9e14df037263ceb2af00265a86eb73",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/oss/kubernetes/autoscaler/cluster-proportional-autoscaler:v1.8.9",
+            "registry": "mcr.microsoft.com",
+            "repository": "oss/kubernetes/autoscaler/cluster-proportional-autoscaler",
+            "scanResultID": "17e333c237146c6d52e9b488c30aba52"
+        },
+        "name": "oss/kubernetes/autoscaler/cluster-proportional-autoscaler",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22f818621acf10f23338ee77e25bca36f0bb9e14df037263ceb2af00265a86eb73%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "2fe5a752a33e9d768a167f4018dba5a7",
+        "labels": null,
+        "lastSeen": 1721321395213,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1716832212213",
+            "digest": "sha256:303ca2e51a60384917731f06d0f23a109fbc1c5a7da4e84c29e2c992ecd7f053",
+            "id": "sha256:74ebdc3f247fc7c26c15b14a0efcf04fa9b52e18180ce2d33bd4e7fb585efcbf",
+            "os": "linux",
+            "pullString": "gke.gcr.io/gke-metrics-agent:1.12.2-gke.3@sha256:303ca2e51a60384917731f06d0f23a109fbc1c5a7da4e84c29e2c992ecd7f053",
+            "registry": "gke.gcr.io",
+            "repository": "gke-metrics-agent",
+            "scanResultID": "17e338d68e6a7f4774a8c7ea43b755a2"
+        },
+        "name": "gke-metrics-agent",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2274ebdc3f247fc7c26c15b14a0efcf04fa9b52e18180ce2d33bd4e7fb585efcbf%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "0ecae15625c9a93af7f506350d0bcffa",
+        "labels": null,
+        "lastSeen": 1721321394276,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1717204347940",
+            "digest": "sha256:c1938e18936487256372ba6f36a4797cfe53a612ccc90e6bb0d1c28686e66051",
+            "id": "sha256:1d241be96ee26968966dc8b6c42a50154a01a620de62c3ab3decc501dbe6d1a3",
+            "os": "linux",
+            "pullString": "gke.gcr.io/prometheus-engine/config-reloader:v0.12.0-gke.3@sha256:c1938e18936487256372ba6f36a4797cfe53a612ccc90e6bb0d1c28686e66051",
+            "registry": "gke.gcr.io",
+            "repository": "prometheus-engine/config-reloader",
+            "scanResultID": "17e338d75a3c9d3434e9aed791c0bc52"
+        },
+        "name": "prometheus-engine/config-reloader",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%221d241be96ee26968966dc8b6c42a50154a01a620de62c3ab3decc501dbe6d1a3%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "02935acadf40038afb1db7c371da8c54",
+        "labels": null,
+        "lastSeen": 1721321395083,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1717198971155",
+            "digest": "sha256:aa631b2f63f54f350887000fb9f1fc2cf1a4820652140e458751f27858bdf081",
+            "id": "sha256:e7b33bb6b5d62e51a7941a2a7ab6f24e63c5b41af5b57a4487a4e0c84c28064b",
+            "os": "linux",
+            "pullString": "gke.gcr.io/prometheus-engine/prometheus:v2.45.3-gmp.5-gke.0@sha256:aa631b2f63f54f350887000fb9f1fc2cf1a4820652140e458751f27858bdf081",
+            "registry": "gke.gcr.io",
+            "repository": "prometheus-engine/prometheus",
+            "scanResultID": "17e338d8ac3731fd6cc6115b94b0c642"
+        },
+        "name": "prometheus-engine/prometheus",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22e7b33bb6b5d62e51a7941a2a7ab6f24e63c5b41af5b57a4487a4e0c84c28064b%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "bfb3f1cd436a83b10a8668b959f7e72c",
+        "labels": null,
+        "lastSeen": 1721321394697,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1714111724000",
+            "digest": "sha256:545f5594f9a6ee714b315897f92edeaa858b1074e4c6a38894353214907e4fe5",
+            "id": "sha256:fb7c5e3c7ddbb8e5e5cf6e026c8fcfa9bc0bc0f3e1fa88ef46b0520da62a48ce",
+            "os": "linux",
+            "pullString": "gke.gcr.io/gke-metrics-collector:20240425_2300_RC0@sha256:545f5594f9a6ee714b315897f92edeaa858b1074e4c6a38894353214907e4fe5",
+            "registry": "gke.gcr.io",
+            "repository": "gke-metrics-collector",
+            "scanResultID": "17e338e1f99cfc7aca75b7dc098f5b82"
+        },
+        "name": "gke-metrics-collector",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22fb7c5e3c7ddbb8e5e5cf6e026c8fcfa9bc0bc0f3e1fa88ef46b0520da62a48ce%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "180f9a4353498e2edee13b60b16a3d69",
+        "labels": null,
+        "lastSeen": 1721321394365,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.9",
+            "created": "1718058412013",
+            "digest": "sha256:2449bf78216d124e3dcb862313f931c3c738c52d1701377ecfcf70dd77482462",
+            "id": "sha256:5dec0071197e635caaadfa09f55a814d9be586823053cd593b262f02d1087e50",
+            "os": "linux",
+            "pullString": "gke.gcr.io/gcp-compute-persistent-disk-csi-driver:v1.13.6-gke.3@sha256:2449bf78216d124e3dcb862313f931c3c738c52d1701377ecfcf70dd77482462",
+            "registry": "gke.gcr.io",
+            "repository": "gcp-compute-persistent-disk-csi-driver",
+            "scanResultID": "17e338df96bc3a92a77c7cd6c8298562"
+        },
+        "name": "gcp-compute-persistent-disk-csi-driver",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%225dec0071197e635caaadfa09f55a814d9be586823053cd593b262f02d1087e50%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "1457891d51c2b654bf2874fc27e3ff75",
+        "labels": null,
+        "lastSeen": 1721321395283,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1717561349472",
+            "digest": "sha256:a87d019a41bfd8c66070f8d2ebf17584a8e12357318516143bc9a0dcc3907fc4",
+            "id": "sha256:557403aa33912425f00c6ec219a67dab8ed2d393595606a2da73d2d870ade241",
+            "os": "linux",
+            "pullString": "gke.gcr.io/metrics-server:v0.7.1-gke.13@sha256:a87d019a41bfd8c66070f8d2ebf17584a8e12357318516143bc9a0dcc3907fc4",
+            "registry": "gke.gcr.io",
+            "repository": "metrics-server",
+            "scanResultID": "17e338daee4a4f70e485184dc60396f2"
+        },
+        "name": "metrics-server",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22557403aa33912425f00c6ec219a67dab8ed2d393595606a2da73d2d870ade241%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "c81441117a31084119f79dceafcd7d41",
+        "labels": null,
+        "lastSeen": 1721321395213,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1717204353708",
+            "digest": "sha256:61fff263b86387c3f586d91a213da55d2840d968d6ea151444de60243c6d4840",
+            "id": "sha256:b657ed1ed01746a31e68cb69f8ed9f9ad99b210c501708f66a04b0ef59d6aff0",
+            "os": "linux",
+            "pullString": "gke.gcr.io/prometheus-engine/operator:v0.12.0-gke.3@sha256:61fff263b86387c3f586d91a213da55d2840d968d6ea151444de60243c6d4840",
+            "registry": "gke.gcr.io",
+            "repository": "prometheus-engine/operator",
+            "scanResultID": "17e338d75dc1d37ca63934de5403dfe2"
+        },
+        "name": "prometheus-engine/operator",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22b657ed1ed01746a31e68cb69f8ed9f9ad99b210c501708f66a04b0ef59d6aff0%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "df946075f18e946149625d4277c13d03",
+        "labels": null,
+        "lastSeen": 1721321394697,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1718058446190",
+            "digest": "sha256:50de4b5e9faeea78aaa763c62213cd30107fe72a7ef941b544ae103304ce9ba4",
+            "id": "sha256:c223940f67e204960802a35d868bb2634b0d9e2dcf1dba202885cd03b622d0c7",
+            "os": "linux",
+            "pullString": "gke.gcr.io/csi-node-driver-registrar:v2.9.4-gke.4@sha256:50de4b5e9faeea78aaa763c62213cd30107fe72a7ef941b544ae103304ce9ba4",
+            "registry": "gke.gcr.io",
+            "repository": "csi-node-driver-registrar",
+            "scanResultID": "17e338dc5ae35f78d4095c7068548a82"
+        },
+        "name": "csi-node-driver-registrar",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22c223940f67e204960802a35d868bb2634b0d9e2dcf1dba202885cd03b622d0c7%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "c0bd11b684cef1693087d68293a73296",
+        "labels": null,
+        "lastSeen": 1721321394114,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.7",
+            "created": "1709216529651",
+            "digest": "sha256:20ad001e40369a28be126da7c5f9f66f557044fdc76443e469d0ed1dd0f42fc2",
+            "id": "sha256:740e4e5e776d6c2e777c23cb8e9d5c0fee90b74860e330f14f245dd870125bfd",
+            "os": "linux",
+            "pullString": "gke.gcr.io/k8s-dns-sidecar:1.23.0-gke.0@sha256:0d98d31103d439e9be9f2f9fa720139e4cab3cc4facc041faa0cc95af1e46118",
+            "registry": "gke.gcr.io",
+            "repository": "k8s-dns-sidecar",
+            "scanResultID": "17e32b7fb43310a222b09ed2bcf78b82"
+        },
+        "name": "k8s-dns-sidecar",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22740e4e5e776d6c2e777c23cb8e9d5c0fee90b74860e330f14f245dd870125bfd%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "2f34815602aacfb48b464515ef33d2fd",
+        "labels": null,
+        "lastSeen": 1721321395083,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1706217214092",
+            "digest": "sha256:290fd02315b5026e0c0116ab1ddbcc677f1fe2b5877694b0e00d0d68e478b27a",
+            "id": "sha256:f93a612da8dbf8747a3a21b1908945446f4da2e60228f6d0f04026af682d504b",
+            "os": "linux",
+            "pullString": "gke.gcr.io/proxy-agent:v0.29.0-gke.0@sha256:7fc18b8cf4e8930ea9f8d05c1edf363d3f23c668946a1d065d837a866b143fa3",
+            "registry": "gke.gcr.io",
+            "repository": "proxy-agent",
+            "scanResultID": "17e32b7fb3dc7db697bdab7a1be3fce2"
+        },
+        "name": "proxy-agent",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22f93a612da8dbf8747a3a21b1908945446f4da2e60228f6d0f04026af682d504b%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "d34729520fb2c2be097d621577f0d234",
+        "labels": null,
+        "lastSeen": 1721321394483,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.7",
+            "created": "1694807559818",
+            "digest": "sha256:8f2a8fae136d8b951b353532fe50d9cfdb7b384dbd91229ff301634e71bd7f0c",
+            "id": "sha256:1a74d6abc61543c0c637ef313bf923f21b10808c946e94e81dcf3b79cf833794",
+            "os": "linux",
+            "pullString": "gke.gcr.io/cluster-proportional-autoscaler:v1.8.9-gke.3",
+            "registry": "gke.gcr.io",
+            "repository": "cluster-proportional-autoscaler",
+            "scanResultID": "17e333e8095a7c873bd0476c471069e2"
+        },
+        "name": "cluster-proportional-autoscaler",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%221a74d6abc61543c0c637ef313bf923f21b10808c946e94e81dcf3b79cf833794%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "c99011beeec2161a65ab88a005e6fcb2",
+        "labels": null,
+        "lastSeen": 1721321395011,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.8",
+            "created": "1709216527801",
+            "digest": "sha256:22779afe8dc7ce8a02a105ae874071a965e068146e1871834122edc29c85f3a0",
+            "id": "sha256:3391eedf97133a4bbe7a16a6f126b950a5aa5361529dde000979a871ff8c452b",
+            "os": "linux",
+            "pullString": "gke.gcr.io/k8s-dns-dnsmasq-nanny:1.23.0-gke.0@sha256:22779afe8dc7ce8a02a105ae874071a965e068146e1871834122edc29c85f3a0",
+            "registry": "gke.gcr.io",
+            "repository": "k8s-dns-dnsmasq-nanny",
+            "scanResultID": "17e333a19ffaba64f8d8c7536c590832"
+        },
+        "name": "k8s-dns-dnsmasq-nanny",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%223391eedf97133a4bbe7a16a6f126b950a5aa5361529dde000979a871ff8c452b%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 12,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "b842cc87e4bc53b182f3e97ac30e11b2",
+        "labels": null,
+        "lastSeen": 1721321394276,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1715116242069",
+            "digest": "sha256:e2c258f7792139e52d90e83580ba31ee68f92292857d8ee9926f98141240c9d9",
+            "id": "sha256:5d75c53021e003e2632297c413b97a36d80f236f30c96d58bb731fd6fe427fad",
+            "os": "linux",
+            "pullString": "gke.gcr.io/addon-resizer:1.8.19-gke.3@sha256:39492ce9b843bfe19ff9e58d1794ec3edba0a950d71aa680a4505fd1f14e7d50",
+            "registry": "gke.gcr.io",
+            "repository": "addon-resizer",
+            "scanResultID": "17e32b7fb3c703dd77ff535d40a29c72"
+        },
+        "name": "addon-resizer",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%225d75c53021e003e2632297c413b97a36d80f236f30c96d58bb731fd6fe427fad%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "ca900eeec93b685a5834e65b45b3fb80",
+        "labels": null,
+        "lastSeen": 1721321394483,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 11.7",
+            "created": "1709216528410",
+            "digest": "sha256:9775e5f4516f442e3241d98b335744e4ad5dbd0d272436c0e75f18142d5b6e59",
+            "id": "sha256:48a442e12d59a249a134f2d6c70d1ae508899e59a671eadaffa2aeb8001bc512",
+            "os": "linux",
+            "pullString": "gke.gcr.io/k8s-dns-kube-dns:1.23.0-gke.0@sha256:9775e5f4516f442e3241d98b335744e4ad5dbd0d272436c0e75f18142d5b6e59",
+            "registry": "gke.gcr.io",
+            "repository": "k8s-dns-kube-dns",
+            "scanResultID": "17e333a299714f85b307bd0d61fd2f12"
+        },
+        "name": "k8s-dns-kube-dns",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%2248a442e12d59a249a134f2d6c70d1ae508899e59a671eadaffa2aeb8001bc512%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "ea329d1b50ea900381adf830ebd6dfca",
+        "labels": null,
+        "lastSeen": 1721321395083,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1715197477090",
+            "digest": "sha256:e976a4a26a1a618a0cc5f8eab5a2691bd1c0932941579ebb38a637ba42287c0f",
+            "id": "sha256:f0f44052f9fac8e17e15ef6ca52986c938423abe1602132e12a40f98b5884094",
+            "os": "linux",
+            "pullString": "gke.gcr.io/ingress-gce-404-server-with-metrics:v1.28.6@sha256:e976a4a26a1a618a0cc5f8eab5a2691bd1c0932941579ebb38a637ba42287c0f",
+            "registry": "gke.gcr.io",
+            "repository": "ingress-gce-404-server-with-metrics",
+            "scanResultID": "17e333ec0ed9544534e87ac1d0d25ec2"
+        },
+        "name": "ingress-gce-404-server-with-metrics",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22f0f44052f9fac8e17e15ef6ca52986c938423abe1602132e12a40f98b5884094%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "6cbec08bfefb3d22b54e0e5c8c839b2b",
+        "labels": null,
+        "lastSeen": 1721321395083,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "debian 12.5",
+            "created": "1716405192051",
+            "digest": "sha256:5af6d5890680dec4efe0c0b84d2eb28ba94b8b8c6518087aa7b6356fa07e149a",
+            "id": "sha256:d0c207fb0607ce2d2e44493cf327ffde727d25f27dd43035cfe98d3aa292ebaa",
+            "os": "linux",
+            "pullString": "gke.gcr.io/fluent-bit:v1.8.12-gke.30@sha256:5af6d5890680dec4efe0c0b84d2eb28ba94b8b8c6518087aa7b6356fa07e149a",
+            "registry": "gke.gcr.io",
+            "repository": "fluent-bit",
+            "scanResultID": "17e3342c1f827fa41574f5a1d6380ee2"
+        },
+        "name": "fluent-bit",
+        "platform": "Google Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%22d0c207fb0607ce2d2e44493cf327ffde727d25f27dd43035cfe98d3aa292ebaa%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 9,
+            "negligibleSeverityCount": 10
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "hash": "537094c7961e0bee153f6f5b6580e4a2",
+        "labels": null,
+        "lastSeen": 1721321150603,
+        "metadata": {
+            "architecture": "amd64",
+            "baseOS": "",
+            "created": "1719359078728",
+            "digest": "sha256:d2a333ab336fc486b78b97374f8a3136942e91cca800059cc3b5c6b8d3141956",
+            "id": "sha256:6ec1858c8053a0f4daf62758066e3a2a333b870c5d81e8e362c2e39779decc93",
+            "os": "linux",
+            "pullString": "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:3.1.22",
+            "registry": "mcr.microsoft.com",
+            "repository": "azuremonitor/containerinsights/ciprod",
+            "scanResultID": "17e3342789eb1a57610e87e40fff2f52"
+        },
+        "name": "azuremonitor/containerinsights/ciprod",
+        "platform": "Microsoft Container Registry",
+        "resourceOrigin": "Deployed",
+        "type": "Image",
+        "vmApiEndpoint": "/api/scanning/runtime/v2/workflows/results?cursor&filter=freeText%20in%20%28%226ec1858c8053a0f4daf62758066e3a2a333b870c5d81e8e362c2e39779decc93%22%29&limit=100&order=desc&sort=runningVulnsBySev&zones",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 1,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    }
+]

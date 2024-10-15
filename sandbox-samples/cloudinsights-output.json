@@ -1,0 +1,242 @@
+{
+    "externalID": "9b186280-0683-46ff-b353-74affcd6a7c6",
+    "clusters": [
+        {
+            "name": "education-eks-arfaBABN",
+            "region": "",
+            "pods": [
+                {
+                    "name": "playground-997c7c867-mq4pr",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "security-playground",
+                            "image": "manuelbcd/security-playground:1.0.6",
+                            "publicExposed": true
+                        }
+                    ]
+                },
+                {
+                    "name": "coredns-79df7fff65-jk675",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "coredns",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "coredns-79df7fff65-blsgn",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "coredns",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-provisioner",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-snapshotter",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-resizer",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-provisioner",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-attacher",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "ebs-plugin",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "ebs-plugin",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "liveness-probe",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-snapshotter",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "liveness-probe",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-resizer",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "ebs-csi-controller-7bfc7669d5-45cxd",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "csi-attacher",
+                            "image": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "my-juice-shop-6b9bfd7d46-nfpmq",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "juice-shop",
+                            "image": "docker.io/bkimminich/juice-shop:v12.7.0",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "sysdig-agent-clusterscanner-56cf44869-96hdc",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "rsi",
+                            "image": "quay.io/sysdig/runtime-status-integrator:0.7.6",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "sysdig-agent-clusterscanner-56cf44869-whnbl",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "ise",
+                            "image": "quay.io/sysdig/image-sbom-extractor:0.7.6",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "sysdig-agent-clusterscanner-56cf44869-96hdc",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "ise",
+                            "image": "quay.io/sysdig/image-sbom-extractor:0.7.6",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "sysdig-agent-clusterscanner-56cf44869-whnbl",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "rsi",
+                            "image": "quay.io/sysdig/runtime-status-integrator:0.7.6",
+                            "publicExposed": false
+                        }
+                    ]
+                },
+                {
+                    "name": "sysdig-agent-kspmcollector-76b586b54b-w22ls",
+                    "ips": [],
+                    "containers": [
+                        {
+                            "name": "kspmcollector",
+                            "image": "quay.io/sysdig/kspm-collector:1.39.1",
+                            "publicExposed": false
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

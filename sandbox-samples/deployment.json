@@ -1,0 +1,3979 @@
+[
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=07fc58b2462e17b7edf3ba07911fe7ad&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "765b7bc4b855",
+                "containerName": "event-exporter",
+                "podName": "event-exporter-gke-766bc76558-qg48x",
+                "pullString": "gke.gcr.io/event-exporter:v0.4.4-gke.21@sha256:0f8a9a891ded7d06bb331518a268bdf1edd70f33b876c01c0fee28ddd4cf1702"
+            },
+            {
+                "containerId": "9c66b95243ec",
+                "containerName": "prometheus-to-sd-exporter",
+                "podName": "event-exporter-gke-766bc76558-qg48x",
+                "pullString": "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.29@sha256:37c7ea1dd7a0e4b1f8361701acabdb19d7bb16ea7b68d346b7999416cb50d744"
+            }
+        ],
+        "hash": "07fc58b2462e17b7edf3ba07911fe7ad",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "version: v0.4.0",
+            "kubernetes.io/cluster-service: true",
+            "k8s-app: event-exporter",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "prometheus-to-sd-exporter",
+                "event-exporter"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.29@sha256:37c7ea1dd7a0e4b1f8361701acabdb19d7bb16ea7b68d346b7999416cb50d744",
+                "gke.gcr.io/event-exporter:v0.4.4-gke.21@sha256:0f8a9a891ded7d06bb331518a268bdf1edd70f33b876c01c0fee28ddd4cf1702"
+            ]
+        },
+        "name": "event-exporter-gke",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=07fc58b2462e17b7edf3ba07911fe7ad&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=d20b06369698081b3690cc653c74786d&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "2ce0c708a8c8",
+                "containerName": "operator",
+                "podName": "gmp-operator-5b68c9bf7c-n8z8c",
+                "pullString": "gke.gcr.io/prometheus-engine/operator:v0.12.0-gke.3@sha256:61fff263b86387c3f586d91a213da55d2840d968d6ea151444de60243c6d4840"
+            }
+        ],
+        "hash": "d20b06369698081b3690cc653c74786d",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/component: operator",
+            "app: managed-prometheus-operator",
+            "app.kubernetes.io/part-of: gmp",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "app.kubernetes.io/version: 0.10.0",
+            "app.kubernetes.io/name: gmp-operator"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "operator"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "gmp-system",
+            "pullStrings": [
+                "gke.gcr.io/prometheus-engine/operator:v0.12.0-gke.3@sha256:61fff263b86387c3f586d91a213da55d2840d968d6ea151444de60243c6d4840"
+            ]
+        },
+        "name": "gmp-operator",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=d20b06369698081b3690cc653c74786d&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=b45a16a3056cd91c275400f0f57d11f0&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "539ed33a2a5c",
+                "containerName": "juice-shop-goof",
+                "podName": "juice-shop-fe-76b554c5bf-t5j8v",
+                "pullString": "us-west1-docker.pkg.dev/snyk-cx-se-demo/demo/juice-shop-goof:frontend"
+            }
+        ],
+        "hash": "b45a16a3056cd91c275400f0f57d11f0",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 4,
+            "hasExploit": false,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 10,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app: juice-shop-fe"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "juice-shop-goof"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "us-west1-docker.pkg.dev/snyk-cx-se-demo/demo/juice-shop-goof:frontend"
+            ]
+        },
+        "name": "juice-shop-fe",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=b45a16a3056cd91c275400f0f57d11f0&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 12,
+            "hasExploit": true,
+            "highSeverityCount": 32,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 44,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=9fc7d9c378e10c3dbb4b5f603c2c245a&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "69d265f8251b",
+                "containerName": "konnectivity-agent",
+                "podName": "konnectivity-agent-74fd48c4c5-fn9cf",
+                "pullString": "gke.gcr.io/proxy-agent:v0.29.0-gke.0@sha256:7fc18b8cf4e8930ea9f8d05c1edf363d3f23c668946a1d065d837a866b143fa3"
+            },
+            {
+                "containerId": "d7342feddd83",
+                "containerName": "konnectivity-agent-metrics-collector",
+                "podName": "konnectivity-agent-74fd48c4c5-fn9cf",
+                "pullString": "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332"
+            }
+        ],
+        "hash": "9fc7d9c378e10c3dbb4b5f603c2c245a",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: konnectivity-agent",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "konnectivity-agent",
+                "konnectivity-agent-metrics-collector"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/proxy-agent:v0.29.0-gke.0@sha256:7fc18b8cf4e8930ea9f8d05c1edf363d3f23c668946a1d065d837a866b143fa3",
+                "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332"
+            ]
+        },
+        "name": "konnectivity-agent",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=9fc7d9c378e10c3dbb4b5f603c2c245a&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=ac950de39885773efb9b485e4bfd6fc2&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "1b73e0a81d09",
+                "containerName": "autoscaler",
+                "podName": "konnectivity-agent-autoscaler-67d4f7d5f-h8zjp",
+                "pullString": "gke.gcr.io/cluster-proportional-autoscaler:v1.8.10-gke.3@sha256:274afbfd520aef0933f1fefabddbb33144700982965f9e3632caabb055e912c6"
+            }
+        ],
+        "hash": "ac950de39885773efb9b485e4bfd6fc2",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: konnectivity-agent-autoscaler",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "kubernetes.io/cluster-service: true"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "autoscaler"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/cluster-proportional-autoscaler:v1.8.10-gke.3@sha256:274afbfd520aef0933f1fefabddbb33144700982965f9e3632caabb055e912c6"
+            ]
+        },
+        "name": "konnectivity-agent-autoscaler",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=ac950de39885773efb9b485e4bfd6fc2&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=f1464814e1b6f400eed872949b5e8c8a&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "3f966d4eaaf2",
+                "containerName": "sidecar",
+                "podName": "kube-dns-575565bd87-pxsr7",
+                "pullString": "gke.gcr.io/k8s-dns-sidecar:1.23.0-gke.0@sha256:0d98d31103d439e9be9f2f9fa720139e4cab3cc4facc041faa0cc95af1e46118"
+            },
+            {
+                "containerId": "64f0122b9d30",
+                "containerName": "dnsmasq",
+                "podName": "kube-dns-575565bd87-pxsr7",
+                "pullString": "gke.gcr.io/k8s-dns-dnsmasq-nanny:1.23.0-gke.0@sha256:22779afe8dc7ce8a02a105ae874071a965e068146e1871834122edc29c85f3a0"
+            },
+            {
+                "containerId": "8f2882912630",
+                "containerName": "kubedns-metrics-collector",
+                "podName": "kube-dns-575565bd87-pxsr7",
+                "pullString": "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332"
+            },
+            {
+                "containerId": "9c91ab9168dd",
+                "containerName": "prometheus-to-sd",
+                "podName": "kube-dns-575565bd87-pxsr7",
+                "pullString": "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.13@sha256:7e93b4bfa310d477fd8a977d5772a2f92dc746152906d31b66e872f919de3b5e"
+            },
+            {
+                "containerId": "b33b83f4170b",
+                "containerName": "kubedns",
+                "podName": "kube-dns-575565bd87-pxsr7",
+                "pullString": "gke.gcr.io/k8s-dns-kube-dns:1.23.0-gke.0@sha256:9775e5f4516f442e3241d98b335744e4ad5dbd0d272436c0e75f18142d5b6e59"
+            }
+        ],
+        "hash": "f1464814e1b6f400eed872949b5e8c8a",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 8,
+            "lowSeverityCount": 3,
+            "mediumSeverityCount": 6,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "k8s-app: kube-dns",
+            "kubernetes.io/cluster-service: true"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "kubedns-metrics-collector",
+                "prometheus-to-sd",
+                "sidecar",
+                "kubedns",
+                "dnsmasq"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "5",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332",
+                "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.13@sha256:7e93b4bfa310d477fd8a977d5772a2f92dc746152906d31b66e872f919de3b5e",
+                "gke.gcr.io/k8s-dns-sidecar:1.23.0-gke.0@sha256:0d98d31103d439e9be9f2f9fa720139e4cab3cc4facc041faa0cc95af1e46118",
+                "gke.gcr.io/k8s-dns-kube-dns:1.23.0-gke.0@sha256:9775e5f4516f442e3241d98b335744e4ad5dbd0d272436c0e75f18142d5b6e59",
+                "gke.gcr.io/k8s-dns-dnsmasq-nanny:1.23.0-gke.0@sha256:22779afe8dc7ce8a02a105ae874071a965e068146e1871834122edc29c85f3a0"
+            ]
+        },
+        "name": "kube-dns",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=f1464814e1b6f400eed872949b5e8c8a&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 14,
+            "lowSeverityCount": 3,
+            "mediumSeverityCount": 16,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=c350b1767af9be8cffbdc3893a771e4d&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "ac9c90695dc2",
+                "containerName": "autoscaler",
+                "podName": "kube-dns-autoscaler-79b96f5cb-bpddh",
+                "pullString": "gke.gcr.io/cluster-proportional-autoscaler:v1.8.9-gke.3"
+            }
+        ],
+        "hash": "c350b1767af9be8cffbdc3893a771e4d",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: kube-dns-autoscaler",
+            "kubernetes.io/cluster-service: true",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "autoscaler"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/cluster-proportional-autoscaler:v1.8.9-gke.3"
+            ]
+        },
+        "name": "kube-dns-autoscaler",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=c350b1767af9be8cffbdc3893a771e4d&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=bc5af7c3d3a627f6e673379dcb7a726c&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "7020c341e760",
+                "containerName": "default-http-backend",
+                "podName": "l7-default-backend-6484dd554-m9qqx",
+                "pullString": "gke.gcr.io/ingress-gce-404-server-with-metrics:v1.28.6@sha256:e976a4a26a1a618a0cc5f8eab5a2691bd1c0932941579ebb38a637ba42287c0f"
+            }
+        ],
+        "hash": "bc5af7c3d3a627f6e673379dcb7a726c",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": true,
+        "labels": [
+            "name: glbc",
+            "k8s-app: glbc",
+            "kubernetes.io/cluster-service: true",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "kubernetes.io/name: GLBC"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "default-http-backend"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/ingress-gce-404-server-with-metrics:v1.28.6@sha256:e976a4a26a1a618a0cc5f8eab5a2691bd1c0932941579ebb38a637ba42287c0f"
+            ]
+        },
+        "name": "l7-default-backend",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=bc5af7c3d3a627f6e673379dcb7a726c&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=d293803cf067679577567a4a4c1203c3&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "5baaa4904cad",
+                "containerName": "security-playground",
+                "podName": "playground-88d64c86f-q5f98",
+                "pullString": "manuelbcd/security-playground:mend-1.0.9"
+            }
+        ],
+        "hash": "d293803cf067679577567a4a4c1203c3",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 4,
+            "hasExploit": true,
+            "highSeverityCount": 14,
+            "lowSeverityCount": 2,
+            "mediumSeverityCount": 19,
+            "negligibleSeverityCount": 19
+        },
+        "isExposed": false,
+        "labels": [
+            "app: playground"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "security-playground"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "manuelbcd/security-playground:mend-1.0.9"
+            ]
+        },
+        "name": "playground",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=d293803cf067679577567a4a4c1203c3&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 39,
+            "hasExploit": true,
+            "highSeverityCount": 563,
+            "lowSeverityCount": 90,
+            "mediumSeverityCount": 1092,
+            "negligibleSeverityCount": 1058
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=a97ca264ffd0a189c2b0a87c5ae04619&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "a97ca264ffd0a189c2b0a87c5ae04619",
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/version: 0.10.0",
+            "app.kubernetes.io/name: rule-evaluator",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "app: managed-prometheus-rule-evaluator"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "evaluator",
+                "config-reloader"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "0",
+            "namespace": "gmp-system",
+            "pullStrings": [
+                "gke.gcr.io/prometheus-engine/rule-evaluator:v0.10.0-gke.6@sha256:b167b0c245dfb68ea67f46e87e6f57a6c6c087c463b1e62b757c479d9967f0de",
+                "gke.gcr.io/prometheus-engine/config-reloader:v0.10.0-gke.6@sha256:05a7f3eb243faca819ffe90ad918b2073010c740796b240c0055fcc4f54dadb8"
+            ]
+        },
+        "name": "rule-evaluator",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=a97ca264ffd0a189c2b0a87c5ae04619&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=97fe1ba5e16fc4173349f1e09c053bce&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "6d4a1f1a8069",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-84488579dc-msv49",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.7.6"
+            },
+            {
+                "containerId": "879f706ae51f",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-84488579dc-l42v2",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            },
+            {
+                "containerId": "a77c5f5f0816",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-84488579dc-l42v2",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.7.6"
+            },
+            {
+                "containerId": "a9513a33ba17",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-84488579dc-msv49",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            }
+        ],
+        "hash": "97fe1ba5e16fc4173349f1e09c053bce",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/version: 0.1.0",
+            "helm.sh/chart: clusterscanner-0.13.3",
+            "app.kubernetes.io/name: clusterScanner",
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/managed-by: Helm"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "rsi",
+                "ise"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/runtime-status-integrator:0.7.6",
+                "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            ]
+        },
+        "name": "sysdig-agent-clusterscanner",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=97fe1ba5e16fc4173349f1e09c053bce&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 12,
+            "lowSeverityCount": 26,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=9c838de0d83f01e36282ac56a3e312c6&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "e9cb3631f65d",
+                "containerName": "kspmcollector",
+                "podName": "sysdig-agent-kspmcollector-577698d96d-mddpd",
+                "pullString": "quay.io/sysdig/kspm-collector:1.39.1"
+            }
+        ],
+        "hash": "9c838de0d83f01e36282ac56a3e312c6",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 12,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/name: kspmcollector",
+            "helm.sh/chart: kspmCollector-0.15.4",
+            "app.kubernetes.io/version: 1.39.1",
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/managed-by: Helm"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "kspmcollector"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/kspm-collector:1.39.1"
+            ]
+        },
+        "name": "sysdig-agent-kspmcollector",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=9c838de0d83f01e36282ac56a3e312c6&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 20,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=b93d8171777f12b8fc2262dd5e0b200e&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "e4d39912be7e",
+                "containerName": "security-playground",
+                "podName": "playground-997c7c867-mq4pr",
+                "pullString": "manuelbcd/security-playground:1.0.6"
+            }
+        ],
+        "hash": "b93d8171777f12b8fc2262dd5e0b200e",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 3,
+            "hasExploit": true,
+            "highSeverityCount": 52,
+            "lowSeverityCount": 8,
+            "mediumSeverityCount": 56,
+            "negligibleSeverityCount": 86
+        },
+        "isExposed": true,
+        "labels": [
+            "app: playground"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "security-playground"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "manuelbcd/security-playground:1.0.6"
+            ]
+        },
+        "name": "playground",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=b93d8171777f12b8fc2262dd5e0b200e&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 39,
+            "hasExploit": true,
+            "highSeverityCount": 562,
+            "lowSeverityCount": 90,
+            "mediumSeverityCount": 1092,
+            "negligibleSeverityCount": 1058
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=bacf1ec5490d122be89fc3c83fae4870&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "25488a935311",
+                "containerName": "coredns",
+                "podName": "coredns-79df7fff65-jk675",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1"
+            },
+            {
+                "containerId": "f1bb996c7884",
+                "containerName": "coredns",
+                "podName": "coredns-79df7fff65-blsgn",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1"
+            }
+        ],
+        "hash": "bacf1ec5490d122be89fc3c83fae4870",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.io/name: CoreDNS",
+            "k8s-app: kube-dns",
+            "eks.amazonaws.com/component: coredns"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "coredns"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/coredns:v1.10.1-eksbuild.1"
+            ]
+        },
+        "name": "coredns",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=bacf1ec5490d122be89fc3c83fae4870&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=0881b5b0fb2bb008f511394bf478d3df&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "1413bb7f5052",
+                "containerName": "csi-provisioner",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3"
+            },
+            {
+                "containerId": "495d7d54bab8",
+                "containerName": "csi-snapshotter",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3"
+            },
+            {
+                "containerId": "575079689a49",
+                "containerName": "csi-resizer",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3"
+            },
+            {
+                "containerId": "5b80139fefa7",
+                "containerName": "csi-provisioner",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3"
+            },
+            {
+                "containerId": "92dc6a0629ed",
+                "containerName": "csi-attacher",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3"
+            },
+            {
+                "containerId": "b5c5c8403264",
+                "containerName": "ebs-plugin",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0"
+            },
+            {
+                "containerId": "b8ff6f007a90",
+                "containerName": "ebs-plugin",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0"
+            },
+            {
+                "containerId": "c694d5dbfdc2",
+                "containerName": "liveness-probe",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3"
+            },
+            {
+                "containerId": "c732d95464c6",
+                "containerName": "csi-snapshotter",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3"
+            },
+            {
+                "containerId": "e6a71a15a642",
+                "containerName": "liveness-probe",
+                "podName": "ebs-csi-controller-7bfc7669d5-dhcgh",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3"
+            },
+            {
+                "containerId": "ebac06a2983b",
+                "containerName": "csi-resizer",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3"
+            },
+            {
+                "containerId": "f6632e4412e5",
+                "containerName": "csi-attacher",
+                "podName": "ebs-csi-controller-7bfc7669d5-45cxd",
+                "pullString": "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3"
+            }
+        ],
+        "hash": "0881b5b0fb2bb008f511394bf478d3df",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 34,
+            "lowSeverityCount": 2,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/version: 1.20.0",
+            "app.kubernetes.io/component: csi-driver",
+            "app: ebs-csi-controller",
+            "app.kubernetes.io/name: aws-ebs-csi-driver",
+            "app.kubernetes.io/managed-by: EKS"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "csi-snapshotter",
+                "csi-provisioner",
+                "csi-attacher",
+                "csi-resizer",
+                "ebs-plugin",
+                "liveness-probe"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "6",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-snapshotter:v6.2.1-eks-1-27-3",
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-provisioner:v3.5.0-eks-1-27-3",
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-attacher:v4.3.0-eks-1-27-3",
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/csi-resizer:v1.8.0-eks-1-27-3",
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/aws-ebs-csi-driver:v1.20.0",
+                "602401143452.dkr.ecr.us-east-1.amazonaws.com/eks/livenessprobe:v2.10.0-eks-1-27-3"
+            ]
+        },
+        "name": "ebs-csi-controller",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=0881b5b0fb2bb008f511394bf478d3df&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 49,
+            "lowSeverityCount": 5,
+            "mediumSeverityCount": 27,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=48f79e21421ff161371115caf751afdb&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "f8935b7175e3",
+                "containerName": "juice-shop",
+                "podName": "my-juice-shop-6b9bfd7d46-nfpmq",
+                "pullString": "docker.io/bkimminich/juice-shop:v12.7.0"
+            }
+        ],
+        "hash": "48f79e21421ff161371115caf751afdb",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/instance: my-juice-shop",
+            "app.kubernetes.io/name: juice-shop",
+            "helm.sh/chart: juice-shop-3.5.0",
+            "app.kubernetes.io/version: v12.7.0"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "juice-shop"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "docker.io/bkimminich/juice-shop:v12.7.0"
+            ]
+        },
+        "name": "my-juice-shop",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=48f79e21421ff161371115caf751afdb&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 36,
+            "hasExploit": true,
+            "highSeverityCount": 86,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 33,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=d896dff56ff40561b249051d70a76016&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "1827e7cbef6d",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-56cf44869-96hdc",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.7.6"
+            },
+            {
+                "containerId": "926abbbd7527",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-56cf44869-whnbl",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            },
+            {
+                "containerId": "97f541291315",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-56cf44869-96hdc",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            },
+            {
+                "containerId": "d83da33ed069",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-56cf44869-whnbl",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.7.6"
+            }
+        ],
+        "hash": "d896dff56ff40561b249051d70a76016",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/name: clusterScanner",
+            "helm.sh/chart: clusterscanner-0.13.3",
+            "app.kubernetes.io/version: 0.1.0"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "rsi",
+                "ise"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "2",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/runtime-status-integrator:0.7.6",
+                "quay.io/sysdig/image-sbom-extractor:0.7.6"
+            ]
+        },
+        "name": "sysdig-agent-clusterscanner",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=d896dff56ff40561b249051d70a76016&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 12,
+            "lowSeverityCount": 26,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=2ae681567eb4e81abc70ce1a4c9402e0&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "e033725f5d0e",
+                "containerName": "kspmcollector",
+                "podName": "sysdig-agent-kspmcollector-76b586b54b-w22ls",
+                "pullString": "quay.io/sysdig/kspm-collector:1.39.1"
+            }
+        ],
+        "hash": "2ae681567eb4e81abc70ce1a4c9402e0",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 12,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/managed-by: Helm",
+            "helm.sh/chart: kspmCollector-0.15.4",
+            "app.kubernetes.io/name: kspmcollector",
+            "app.kubernetes.io/version: 1.39.1"
+        ],
+        "lastSeen": 1721309636213,
+        "metadata": {
+            "cluster": "education-eks-arfaBABN",
+            "containerNames": [
+                "kspmcollector"
+            ],
+            "distribution": "EKS",
+            "distributionVersion": "1.27",
+            "imagesCount": "1",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/kspm-collector:1.39.1"
+            ]
+        },
+        "name": "sysdig-agent-kspmcollector",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=2ae681567eb4e81abc70ce1a4c9402e0&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 6,
+                    "isPassed": false,
+                    "name": "CIS Amazon Elastic Kubernetes Service (EKS) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 6,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 20,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=6404f4022f1c54e0c257a27b2e536035&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "6404f4022f1c54e0c257a27b2e536035",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": true,
+        "labels": [
+            "name: glbc",
+            "k8s-app: glbc",
+            "kubernetes.io/name: GLBC",
+            "kubernetes.io/cluster-service: true",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "default-http-backend"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/ingress-gce-404-server-with-metrics:v1.28.6@sha256:e976a4a26a1a618a0cc5f8eab5a2691bd1c0932941579ebb38a637ba42287c0f"
+            ]
+        },
+        "name": "l7-default-backend",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=6404f4022f1c54e0c257a27b2e536035&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=23b208df92efdd455f26710635fb3774&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "23b208df92efdd455f26710635fb3774",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/component: operator",
+            "app.kubernetes.io/version: 0.10.0",
+            "app.kubernetes.io/part-of: gmp",
+            "app.kubernetes.io/name: gmp-operator",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "app: managed-prometheus-operator"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "operator"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "gmp-system",
+            "pullStrings": [
+                "gke.gcr.io/prometheus-engine/operator:v0.12.0-gke.3@sha256:61fff263b86387c3f586d91a213da55d2840d968d6ea151444de60243c6d4840"
+            ]
+        },
+        "name": "gmp-operator",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=23b208df92efdd455f26710635fb3774&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=d05fff2696bbe475c07300e63e715bcb&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "d05fff2696bbe475c07300e63e715bcb",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: konnectivity-agent",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "konnectivity-agent-metrics-collector",
+                "konnectivity-agent"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332",
+                "gke.gcr.io/proxy-agent:v0.29.0-gke.0@sha256:7fc18b8cf4e8930ea9f8d05c1edf363d3f23c668946a1d065d837a866b143fa3"
+            ]
+        },
+        "name": "konnectivity-agent",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=d05fff2696bbe475c07300e63e715bcb&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=bc44981375f8a8655a256472c3f61fac&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "bc44981375f8a8655a256472c3f61fac",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "k8s-app: konnectivity-agent-autoscaler",
+            "kubernetes.io/cluster-service: true"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "autoscaler"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/cluster-proportional-autoscaler:v1.8.10-gke.3@sha256:274afbfd520aef0933f1fefabddbb33144700982965f9e3632caabb055e912c6"
+            ]
+        },
+        "name": "konnectivity-agent-autoscaler",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=bc44981375f8a8655a256472c3f61fac&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=19c68bcf87a0e635b9008e28c833b56d&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "19c68bcf87a0e635b9008e28c833b56d",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: kube-dns",
+            "kubernetes.io/cluster-service: true",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "kubedns-metrics-collector",
+                "sidecar",
+                "dnsmasq",
+                "kubedns",
+                "prometheus-to-sd"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "5",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/gke-metrics-collector:20240129_2300_RC0@sha256:63c7b3dab8777fc544998d0623cb27f5858f6d2cc498b0bf23009523b3806332",
+                "gke.gcr.io/k8s-dns-sidecar:1.23.0-gke.0@sha256:0d98d31103d439e9be9f2f9fa720139e4cab3cc4facc041faa0cc95af1e46118",
+                "gke.gcr.io/k8s-dns-dnsmasq-nanny:1.23.0-gke.0@sha256:22779afe8dc7ce8a02a105ae874071a965e068146e1871834122edc29c85f3a0",
+                "gke.gcr.io/k8s-dns-kube-dns:1.23.0-gke.0@sha256:9775e5f4516f442e3241d98b335744e4ad5dbd0d272436c0e75f18142d5b6e59",
+                "gke.gcr.io/prometheus-to-sd:v0.11.12-gke.13@sha256:7e93b4bfa310d477fd8a977d5772a2f92dc746152906d31b66e872f919de3b5e"
+            ]
+        },
+        "name": "kube-dns",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=19c68bcf87a0e635b9008e28c833b56d&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 14,
+            "lowSeverityCount": 3,
+            "mediumSeverityCount": 16,
+            "negligibleSeverityCount": 7
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=f0672de8416d1d1275fc5f196fec936d&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "f0672de8416d1d1275fc5f196fec936d",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.io/cluster-service: true",
+            "k8s-app: kube-dns-autoscaler",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "autoscaler"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/cluster-proportional-autoscaler:v1.8.9-gke.3"
+            ]
+        },
+        "name": "kube-dns-autoscaler",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=f0672de8416d1d1275fc5f196fec936d&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=18ffa5633642607e547349b5d4e5f56d&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "18ffa5633642607e547349b5d4e5f56d",
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "app.kubernetes.io/version: 0.10.0",
+            "app: managed-prometheus-rule-evaluator",
+            "app.kubernetes.io/name: rule-evaluator"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "config-reloader",
+                "evaluator"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "0",
+            "namespace": "gmp-system",
+            "pullStrings": [
+                "gke.gcr.io/prometheus-engine/config-reloader:v0.8.3-gke.3@sha256:2a3601b0e8850f42f50b7396b4dea5f719ee21014577861b52935dffd7d6da69",
+                "gke.gcr.io/prometheus-engine/rule-evaluator:v0.8.3-gke.3@sha256:678fe3a5bb5b6eef8f6d26dc037a256748fb953f0683f376ff429970bf4b1ad9"
+            ]
+        },
+        "name": "rule-evaluator",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=18ffa5633642607e547349b5d4e5f56d&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=5d7d39947ce8aadb96ac0adb298b063c&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "5d7d39947ce8aadb96ac0adb298b063c",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "helm.sh/chart: kspmCollector-0.15.0",
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/name: kspmcollector",
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/version: 1.38.5"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "kspmcollector"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/kspm-collector:1.38.5"
+            ]
+        },
+        "name": "sysdig-agent-kspmcollector",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=5d7d39947ce8aadb96ac0adb298b063c&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 37,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=be4e8e5fe1293c682683162087fb4fff&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "be4e8e5fe1293c682683162087fb4fff",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/name: juice-shop",
+            "app.kubernetes.io/version: v12.7.0",
+            "helm.sh/chart: juice-shop-3.5.0",
+            "app.kubernetes.io/instance: my-juice-shop"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "juice-shop"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "docker.io/bkimminich/juice-shop:v12.7.0"
+            ]
+        },
+        "name": "my-juice-shop",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=be4e8e5fe1293c682683162087fb4fff&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 36,
+            "hasExploit": true,
+            "highSeverityCount": 86,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 33,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=486872a05c3dc862c8df24584ec71bc2&resourceKind=Deployment",
+        "containerInfo": [],
+        "hash": "486872a05c3dc862c8df24584ec71bc2",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: metrics-server",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "version: v0.7.1"
+        ],
+        "lastSeen": 1721283093567,
+        "metadata": {
+            "cluster": "gke-alliances-test",
+            "containerNames": [
+                "metrics-server-nanny",
+                "metrics-server"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.29",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/addon-resizer:1.8.19-gke.3@sha256:39492ce9b843bfe19ff9e58d1794ec3edba0a950d71aa680a4505fd1f14e7d50",
+                "gke.gcr.io/metrics-server:v0.7.1-gke.13@sha256:a87d019a41bfd8c66070f8d2ebf17584a8e12357318516143bc9a0dcc3907fc4"
+            ]
+        },
+        "name": "metrics-server-v0.7.1",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=486872a05c3dc862c8df24584ec71bc2&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=aa33dd5f1c245cc1042d75c0b094f21f&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "668ed618d752",
+                "containerName": "vote",
+                "podName": "vote-5655bd759-pbr56",
+                "pullString": "dockersamples/examplevotingapp_vote"
+            }
+        ],
+        "hash": "aa33dd5f1c245cc1042d75c0b094f21f",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 3,
+            "hasExploit": true,
+            "highSeverityCount": 15,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 19,
+            "negligibleSeverityCount": 15
+        },
+        "isExposed": true,
+        "labels": [
+            "app: vote"
+        ],
+        "lastSeen": 1721306412707,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "vote"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "vote",
+            "pullStrings": [
+                "dockersamples/examplevotingapp_vote"
+            ]
+        },
+        "name": "vote",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=aa33dd5f1c245cc1042d75c0b094f21f&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 4,
+            "hasExploit": true,
+            "highSeverityCount": 35,
+            "lowSeverityCount": 4,
+            "mediumSeverityCount": 59,
+            "negligibleSeverityCount": 76
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=c7368c6477b5c37608efbdf849ad273c&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "e9b7c11a169a",
+                "containerName": "redis",
+                "podName": "redis-77fccb7f9-lk5b8",
+                "pullString": "redis:alpine"
+            }
+        ],
+        "hash": "c7368c6477b5c37608efbdf849ad273c",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app: redis"
+        ],
+        "lastSeen": 1721266242023,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "redis"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "vote",
+            "pullStrings": [
+                "redis:alpine"
+            ]
+        },
+        "name": "redis",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=c7368c6477b5c37608efbdf849ad273c&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=3aaaee343aab0a3ad953d20dff6eaced&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "bb58bcae87b6",
+                "containerName": "postgres",
+                "podName": "db-6d9f87bb9b-jkf7n",
+                "pullString": "postgres:15-alpine"
+            }
+        ],
+        "hash": "3aaaee343aab0a3ad953d20dff6eaced",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app: db"
+        ],
+        "lastSeen": 1721306276989,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "postgres"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "vote",
+            "pullStrings": [
+                "postgres:15-alpine"
+            ]
+        },
+        "name": "db",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=3aaaee343aab0a3ad953d20dff6eaced&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=727f21f7c4208568c5b9f6c4a0434a7b&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "31d20d774fa9",
+                "containerName": "worker",
+                "podName": "worker-7dd74bcbbb-5vvzj",
+                "pullString": "dockersamples/examplevotingapp_worker"
+            }
+        ],
+        "hash": "727f21f7c4208568c5b9f6c4a0434a7b",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 9,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 13,
+            "negligibleSeverityCount": 7
+        },
+        "isExposed": false,
+        "labels": [
+            "app: worker"
+        ],
+        "lastSeen": 1721266242023,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "worker"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "vote",
+            "pullStrings": [
+                "dockersamples/examplevotingapp_worker"
+            ]
+        },
+        "name": "worker",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=727f21f7c4208568c5b9f6c4a0434a7b&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 5,
+            "hasExploit": true,
+            "highSeverityCount": 32,
+            "lowSeverityCount": 7,
+            "mediumSeverityCount": 45,
+            "negligibleSeverityCount": 72
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=49d46d96ea7085dd35752ef715ef0209&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "1eb848eba226",
+                "containerName": "security-playground",
+                "podName": "playground-86dfdc6cb5-42xgq",
+                "pullString": "manuelbcd/security-playground:1.0.6"
+            }
+        ],
+        "hash": "49d46d96ea7085dd35752ef715ef0209",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 3,
+            "hasExploit": true,
+            "highSeverityCount": 13,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 20,
+            "negligibleSeverityCount": 27
+        },
+        "isExposed": false,
+        "labels": [
+            "app: playground"
+        ],
+        "lastSeen": 1721282073657,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "security-playground"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "manuelbcd/security-playground:1.0.6"
+            ]
+        },
+        "name": "playground",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=49d46d96ea7085dd35752ef715ef0209&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 39,
+            "hasExploit": true,
+            "highSeverityCount": 562,
+            "lowSeverityCount": 90,
+            "mediumSeverityCount": 1092,
+            "negligibleSeverityCount": 1058
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=c4d3f944d786b564dff1ecb2ceaeacc9&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "29bb3ad8fed8",
+                "containerName": "go-goat",
+                "podName": "go-goat-57dbd6f6c7-6qvn4",
+                "pullString": "manuelbcd/go-goat:1.2"
+            }
+        ],
+        "hash": "c4d3f944d786b564dff1ecb2ceaeacc9",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 3,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app: go-goat"
+        ],
+        "lastSeen": 1721282123562,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "go-goat"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "default",
+            "pullStrings": [
+                "manuelbcd/go-goat:1.2"
+            ]
+        },
+        "name": "go-goat",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=c4d3f944d786b564dff1ecb2ceaeacc9&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 17,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=a63d40996a6fc54cc7b63314abcb864c&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "8e736b279677",
+                "containerName": "result",
+                "podName": "result-54b5ccfc95-t7znm",
+                "pullString": "dockersamples/examplevotingapp_result"
+            }
+        ],
+        "hash": "a63d40996a6fc54cc7b63314abcb864c",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": true,
+            "highSeverityCount": 5,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 6,
+            "negligibleSeverityCount": 9
+        },
+        "isExposed": true,
+        "labels": [
+            "app: result"
+        ],
+        "lastSeen": 1721266242023,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "result"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "vote",
+            "pullStrings": [
+                "dockersamples/examplevotingapp_result"
+            ]
+        },
+        "name": "result",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=a63d40996a6fc54cc7b63314abcb864c&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 5,
+            "hasExploit": true,
+            "highSeverityCount": 31,
+            "lowSeverityCount": 3,
+            "mediumSeverityCount": 50,
+            "negligibleSeverityCount": 72
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=756c0dde8d384418bf0798d5cd6a883f&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "adb91bf64c49",
+                "containerName": "gatekeeper-audit-container",
+                "podName": "gatekeeper-audit-7bd8cb9f77-sb77l",
+                "pullString": "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3"
+            }
+        ],
+        "hash": "756c0dde8d384418bf0798d5cd6a883f",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "gatekeeper.sh/operation: audit",
+            "control-plane: audit-controller",
+            "kubernetes.azure.com/managedby: aks",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "gatekeeper.sh/system: yes"
+        ],
+        "lastSeen": 1721266241877,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "gatekeeper-audit-container"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "gatekeeper-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3"
+            ]
+        },
+        "name": "gatekeeper-audit",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=756c0dde8d384418bf0798d5cd6a883f&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=f737d36a6aa1008af04487d42354c194&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "ae1d35923614",
+                "containerName": "gatekeeper-controller-container",
+                "podName": "gatekeeper-controller-54694cd6c5-xchkm",
+                "pullString": "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3"
+            },
+            {
+                "containerId": "e754424700d2",
+                "containerName": "gatekeeper-controller-container",
+                "podName": "gatekeeper-controller-54694cd6c5-nqzcp",
+                "pullString": "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3"
+            }
+        ],
+        "hash": "f737d36a6aa1008af04487d42354c194",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.azure.com/managedby: aks",
+            "gatekeeper.sh/operation: webhook",
+            "control-plane: controller-manager",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "gatekeeper.sh/system: yes"
+        ],
+        "lastSeen": 1721266241877,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "gatekeeper-controller-container"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "gatekeeper-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/open-policy-agent/gatekeeper:v3.16.3"
+            ]
+        },
+        "name": "gatekeeper-controller",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=f737d36a6aa1008af04487d42354c194&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=3973ada135e3ae5f6606867e6728d7da&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "konnectivity-agent-74f5689ccd-js6h9",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "konnectivity-agent-74f5689ccd-xmqlg",
+                "pullString": ""
+            }
+        ],
+        "hash": "3973ada135e3ae5f6606867e6728d7da",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app: konnectivity-agent",
+            "kubernetes.io/cluster-service: true",
+            "component: tunnel",
+            "kubernetes.azure.com/managedby: aks",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721281955367,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "konnectivity-agent"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/kubernetes/apiserver-network-proxy/agent:v0.1.6-hotfix.20240116"
+            ]
+        },
+        "name": "konnectivity-agent",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=3973ada135e3ae5f6606867e6728d7da&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 2,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=c111a24d8a2bf0a3ddd1ba9a3ce97364&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "metrics-server-6bc6599b58-frwfd",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "metrics-server-6bc6599b58-dgfhl",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "metrics-server-6bc6599b58-dgfhl",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "metrics-server-6bc6599b58-frwfd",
+                "pullString": ""
+            }
+        ],
+        "hash": "c111a24d8a2bf0a3ddd1ba9a3ce97364",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.io/cluster-service: true",
+            "kubernetes.azure.com/managedby: aks",
+            "k8s-app: metrics-server",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721281985957,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "metrics-server-vpa",
+                "metrics-server"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/kubernetes/autoscaler/addon-resizer:1.8.20",
+                "mcr.microsoft.com/oss/kubernetes/metrics-server:v0.6.3"
+            ]
+        },
+        "name": "metrics-server",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=c111a24d8a2bf0a3ddd1ba9a3ce97364&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 9,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=ce3c31ccdf742d15fdb429cf8af36ab6&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "896c29939642",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-688567484d-7vg4c",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.8.3"
+            },
+            {
+                "containerId": "98e61e84bca8",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-688567484d-7vg4c",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.8.3"
+            },
+            {
+                "containerId": "a37606722f80",
+                "containerName": "rsi",
+                "podName": "sysdig-agent-clusterscanner-688567484d-hxzr5",
+                "pullString": "quay.io/sysdig/runtime-status-integrator:0.8.3"
+            },
+            {
+                "containerId": "a952b1a6a76e",
+                "containerName": "ise",
+                "podName": "sysdig-agent-clusterscanner-688567484d-hxzr5",
+                "pullString": "quay.io/sysdig/image-sbom-extractor:0.8.3"
+            }
+        ],
+        "hash": "ce3c31ccdf742d15fdb429cf8af36ab6",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 2,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/version: 0.1.0",
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/name: clusterScanner",
+            "helm.sh/chart: clusterscanner-0.13.5"
+        ],
+        "lastSeen": 1721266242023,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "rsi",
+                "ise"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/runtime-status-integrator:0.8.3",
+                "quay.io/sysdig/image-sbom-extractor:0.8.3"
+            ]
+        },
+        "name": "sysdig-agent-clusterscanner",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=ce3c31ccdf742d15fdb429cf8af36ab6&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 12,
+            "lowSeverityCount": 26,
+            "mediumSeverityCount": 8,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=bc3508233e6065b72103c9c447de773f&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "96f529e78c01",
+                "containerName": "kspmcollector",
+                "podName": "sysdig-agent-kspmcollector-7667f776d7-nh4n5",
+                "pullString": "quay.io/sysdig/kspm-collector:1.39.2"
+            }
+        ],
+        "hash": "bc3508233e6065b72103c9c447de773f",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "app.kubernetes.io/managed-by: Helm",
+            "app.kubernetes.io/instance: sysdig-agent",
+            "app.kubernetes.io/name: kspmcollector",
+            "app.kubernetes.io/version: 1.39.2",
+            "helm.sh/chart: kspmCollector-0.15.7"
+        ],
+        "lastSeen": 1721266242023,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "kspmcollector"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "sysdig-agent",
+            "pullStrings": [
+                "quay.io/sysdig/kspm-collector:1.39.2"
+            ]
+        },
+        "name": "sysdig-agent-kspmcollector",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=bc3508233e6065b72103c9c447de773f&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 3,
+            "lowSeverityCount": 29,
+            "mediumSeverityCount": 22,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=cd58fb6d5e18ebedca7af803735e770b&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "ama-logs-rs-655cfb97ff-mns4r",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "ama-logs-rs-655cfb97ff-mns4r",
+                "pullString": ""
+            }
+        ],
+        "hash": "cd58fb6d5e18ebedca7af803735e770b",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.azure.com/managedby: aks",
+            "component: ama-logs-agent",
+            "tier: node",
+            "helm.toolkit.fluxcd.io/name: azure-monitor-logs-adapter-helmrelease",
+            "rsName: ama-logs-rs",
+            "app.kubernetes.io/managed-by: Helm",
+            "helm.toolkit.fluxcd.io/namespace: 6682f8440ea24c0001d2b08d"
+        ],
+        "lastSeen": 1721266254404,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "ama-logs",
+                "addon-token-adapter"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/azuremonitor/containerinsights/ciprod:3.1.22",
+                "mcr.microsoft.com/aks/msi/addon-token-adapter:master.240510.2"
+            ]
+        },
+        "name": "ama-logs-rs",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=cd58fb6d5e18ebedca7af803735e770b&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 1,
+            "hasExploit": false,
+            "highSeverityCount": 7,
+            "lowSeverityCount": 1,
+            "mediumSeverityCount": 11,
+            "negligibleSeverityCount": 14
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=a54b5b31f5d294440309c26dce8d4bd4&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "0120238ac7a5",
+                "containerName": "azure-policy",
+                "podName": "azure-policy-b87c59fd7-d8pg6",
+                "pullString": "mcr.microsoft.com/azure-policy/policy-kubernetes-addon-prod:1.5.0"
+            }
+        ],
+        "hash": "a54b5b31f5d294440309c26dce8d4bd4",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "app: azure-policy",
+            "kubernetes.azure.com/managedby: aks"
+        ],
+        "lastSeen": 1721266254404,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "azure-policy"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/azure-policy/policy-kubernetes-addon-prod:1.5.0"
+            ]
+        },
+        "name": "azure-policy",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=a54b5b31f5d294440309c26dce8d4bd4&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=f7479427aeaecf0b7c6b2d0e690414d9&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "40710ba8e1dc",
+                "containerName": "azure-policy-webhook",
+                "podName": "azure-policy-webhook-6755fbcdbf-z6pdq",
+                "pullString": "mcr.microsoft.com/azure-policy/policy-kubernetes-webhook:1.5.0"
+            }
+        ],
+        "hash": "f7479427aeaecf0b7c6b2d0e690414d9",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "kubernetes.azure.com/managedby: aks",
+            "app: azure-policy-webhook",
+            "addonmanager.kubernetes.io/mode: Reconcile"
+        ],
+        "lastSeen": 1721280664897,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "azure-policy-webhook"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/azure-policy/policy-kubernetes-webhook:1.5.0"
+            ]
+        },
+        "name": "azure-policy-webhook",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=f7479427aeaecf0b7c6b2d0e690414d9&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=9667e1736c11208552cdd2fc61d989bb&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "coredns-6745896b65-cc92m",
+                "pullString": ""
+            },
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "coredns-6745896b65-7xxfp",
+                "pullString": ""
+            }
+        ],
+        "hash": "9667e1736c11208552cdd2fc61d989bb",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "k8s-app: kube-dns",
+            "kubernetes.io/name: CoreDNS",
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "kubernetes.io/cluster-service: true",
+            "kubernetes.azure.com/managedby: aks",
+            "version: v20"
+        ],
+        "lastSeen": 1721282326493,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "coredns"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/kubernetes/coredns:v1.9.4-hotfix.20240520"
+            ]
+        },
+        "name": "coredns",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=9667e1736c11208552cdd2fc61d989bb&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=261964251e165e7184f454efe28c6d5e&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "",
+                "containerName": "",
+                "podName": "coredns-autoscaler-dcbf9c474-kb5b4",
+                "pullString": ""
+            }
+        ],
+        "hash": "261964251e165e7184f454efe28c6d5e",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "k8s-app: coredns-autoscaler",
+            "kubernetes.azure.com/managedby: aks",
+            "kubernetes.io/cluster-service: true"
+        ],
+        "lastSeen": 1721280832884,
+        "metadata": {
+            "cluster": "servicenow-test-cluster",
+            "containerNames": [
+                "autoscaler"
+            ],
+            "distribution": "AKS",
+            "distributionVersion": "1.28",
+            "imagesCount": "1",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "mcr.microsoft.com/oss/kubernetes/autoscaler/cluster-proportional-autoscaler:v1.8.9"
+            ]
+        },
+        "name": "coredns-autoscaler",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=261964251e165e7184f454efe28c6d5e&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 10,
+                    "isPassed": false,
+                    "name": "CIS Azure Kubernetes Service (AKS) Benchmark"
+                },
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": true,
+            "highSeverityCount": 4,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 1,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=20221d0e53fc6b5a7dd75eaac868838f&resourceKind=Deployment",
+        "containerInfo": [
+            {
+                "containerId": "a7c6a7e96596",
+                "containerName": "metrics-server",
+                "podName": "metrics-server-v0.7.1-6b8d6d8c46-zkqxs",
+                "pullString": "gke.gcr.io/metrics-server:v0.7.1-gke.13@sha256:a87d019a41bfd8c66070f8d2ebf17584a8e12357318516143bc9a0dcc3907fc4"
+            },
+            {
+                "containerId": "cfb3216d49cc",
+                "containerName": "metrics-server-nanny",
+                "podName": "metrics-server-v0.7.1-6b8d6d8c46-zkqxs",
+                "pullString": "gke.gcr.io/addon-resizer:1.8.19-gke.3@sha256:39492ce9b843bfe19ff9e58d1794ec3edba0a950d71aa680a4505fd1f14e7d50"
+            }
+        ],
+        "hash": "20221d0e53fc6b5a7dd75eaac868838f",
+        "inUseVulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "isExposed": false,
+        "labels": [
+            "addonmanager.kubernetes.io/mode: Reconcile",
+            "version: v0.7.1",
+            "k8s-app: metrics-server"
+        ],
+        "lastSeen": 1721309630255,
+        "metadata": {
+            "cluster": "gke-alliances-demo-6",
+            "containerNames": [
+                "metrics-server-nanny",
+                "metrics-server"
+            ],
+            "distribution": "GKE",
+            "distributionVersion": "1.28",
+            "imagesCount": "2",
+            "namespace": "kube-system",
+            "pullStrings": [
+                "gke.gcr.io/addon-resizer:1.8.19-gke.3@sha256:39492ce9b843bfe19ff9e58d1794ec3edba0a950d71aa680a4505fd1f14e7d50",
+                "gke.gcr.io/metrics-server:v0.7.1-gke.13@sha256:a87d019a41bfd8c66070f8d2ebf17584a8e12357318516143bc9a0dcc3907fc4"
+            ]
+        },
+        "name": "metrics-server-v0.7.1",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=20221d0e53fc6b5a7dd75eaac868838f&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 7,
+                    "isPassed": false,
+                    "name": "CIS Google Kubernetes Engine (GKE) Benchmark"
+                },
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Deployment",
+        "vulnerabilitySummary": {
+            "criticalSeverityCount": 0,
+            "hasExploit": false,
+            "highSeverityCount": 0,
+            "lowSeverityCount": 0,
+            "mediumSeverityCount": 0,
+            "negligibleSeverityCount": 0
+        },
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    },
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/kube/resource?resourceHash=cd416864fbe2d9b20fba04ac9e274095&resourceKind=Deployment",
+        "hash": "cd416864fbe2d9b20fba04ac9e274095",
+        "labels": null,
+        "lastSeen": 1721303037069,
+        "metadata": {
+            "integrationName": "Manu-test-2",
+            "location": "https://github.com/manuelbcd/security-playground/blob/master/security-playground/deploy-playground.yml",
+            "namespace": "default",
+            "repository": "security-playground",
+            "sourceType": "YAML"
+        },
+        "name": "playground",
+        "platform": "Kubernetes",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/kube/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=cd416864fbe2d9b20fba04ac9e274095&resourceKind=Deployment",
+        "posturePolicySummary": {
+            "passPercentage": 0,
+            "policies": [
+                {
+                    "id": 2,
+                    "isPassed": false,
+                    "name": "Sysdig Kubernetes"
+                },
+                {
+                    "id": 11,
+                    "isPassed": false,
+                    "name": "CIS Kubernetes V1.18 Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Code",
+        "type": "Deployment",
+        "zones": [
+            {
+                "id": 371680,
+                "name": "Entire Git"
+            }
+        ]
+    }
+]

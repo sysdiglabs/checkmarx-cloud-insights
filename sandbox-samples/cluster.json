@@ -1,0 +1,39 @@
+[
+    {
+        "category": "Compute",
+        "configApiEndpoint": "/api/cspm/v1/cloud/resource?resourceHash=a16f3c317b72b8aaa79353ee6153fcb2&resourceKind=Cluster",
+        "hash": "a16f3c317b72b8aaa79353ee6153fcb2",
+        "labels": null,
+        "lastSeen": 1721315377554,
+        "metadata": {
+            "distribution": "",
+            "version": ""
+        },
+        "name": "education-eks-arfaBABN",
+        "platform": "AWS",
+        "postureControlSummaryApiEndpoint": "/api/cspm/v1/cloud/resource?fields=posturecontrolsummary%2Chash%2Cname%2Cplatform%2Ctype%2Cmetadata%2Cresourceorigin%2Ccategory%2Clastseen&resourceHash=a16f3c317b72b8aaa79353ee6153fcb2&resourceKind=Cluster",
+        "posturePolicySummary": {
+            "passPercentage": 50,
+            "policies": [
+                {
+                    "id": 52,
+                    "isPassed": false,
+                    "name": "All Posture Findings"
+                },
+                {
+                    "id": 15,
+                    "isPassed": true,
+                    "name": "CIS Amazon Web Services Foundations Benchmark"
+                }
+            ]
+        },
+        "resourceOrigin": "Deployed",
+        "type": "Cluster",
+        "zones": [
+            {
+                "id": 119,
+                "name": "Entire Infrastructure"
+            }
+        ]
+    }
+]
